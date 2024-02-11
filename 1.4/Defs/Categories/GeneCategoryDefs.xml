@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- <GeneCategoryDef> -->
+    <!-- <defName>LoS_HeadAttach</defName> -->
+    <!-- <label>LoS Mod Head Attachments</label> -->
+    <!-- <displayPriorityInXenotype>534</displayPriorityInXenotype> -->
+    <!-- <displayPriorityInGenepack>-98</displayPriorityInGenepack> -->
+  <!-- </GeneCategoryDef> -->
+  
+	<GeneCategoryDef>
+    <defName>LoS_Snake_Vis</defName>
+    <label>Snake Parts</label>
+    <!-- Cosmetic_Skin 280 Misc 270-->
+    <displayPriorityInXenotype>2535</displayPriorityInXenotype>
+    <!-- Cosmetic_Skin -110 -->
+    <displayPriorityInGenepack>-2103</displayPriorityInGenepack>
+  </GeneCategoryDef>
+  <GeneCategoryDef>
+    <defName>LoS_Snake_NoVis</defName>
+    <label>Snake</label>
+    <!-- Cosmetic_Skin 280 Misc 270-->
+    <displayPriorityInXenotype>2536</displayPriorityInXenotype>
+    <!-- Cosmetic_Skin -110 -->
+    <displayPriorityInGenepack>-2104</displayPriorityInGenepack>
+  </GeneCategoryDef>
+
+  
+</Defs>

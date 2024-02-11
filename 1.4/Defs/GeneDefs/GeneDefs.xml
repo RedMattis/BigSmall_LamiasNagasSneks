@@ -1,0 +1,375 @@
+<Defs>
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>LoS_SirenFrame</defName>
+    <label>Siren Frame</label>
+    <description>Carriers of this gene grow a fair bit larger than baseline humans, they are also suprisngly fast.</description>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_Frames/Siren</iconPath>
+    <displayOrderInCategory>1100</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <statFactors>
+      <ConstructionSpeed>1.15</ConstructionSpeed>
+      <MoveSpeed>1.15</MoveSpeed>
+      <CarryingCapacity>1.2</CarryingCapacity>
+      <SM_RaidWealthMultiplier>1.5</SM_RaidWealthMultiplier>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>0.7</SM_BodySizeOffset>
+      <SM_RaidWealthOffset>500</SM_RaidWealthOffset>
+    </statOffsets>
+    <selectionWeight>0</selectionWeight>
+    <marketValueFactor>1.4</marketValueFactor>
+    <forcedTraits>
+      <li>
+        <def>BS_Giant</def>
+      </li>
+    </forcedTraits>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>LoS_Anaconda_Frame</defName>
+    <label>Anaconda Frame</label>
+    <!-- Less stats than the Half Jotun, but bigger size. -->
+    <description>Carriers of this gene grow to an impressive size.</description>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_Frames/Anaconda</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>3</biostatCpx>
+    <biostatMet>-3</biostatMet>
+    <statOffsets>
+      <SM_BodySizeOffset>1</SM_BodySizeOffset>
+      <SM_RaidWealthOffset>2000</SM_RaidWealthOffset>
+    </statOffsets>
+    <statFactors>
+      <MiningSpeed>1.3</MiningSpeed>
+      <DeepDrillingSpeed>1.25</DeepDrillingSpeed>
+      <ConstructionSpeed>1.25</ConstructionSpeed>
+      <CarryingCapacity>1.2</CarryingCapacity>
+      <SM_RaidWealthMultiplier>1.5</SM_RaidWealthMultiplier>
+    </statFactors>
+    <selectionWeight>0</selectionWeight>
+    <marketValueFactor>1.7</marketValueFactor>
+    <forcedTraits>
+      <li>
+        <def>BS_Giant</def>
+      </li>
+    </forcedTraits>
+  </GeneDef>
+
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>LoS_Gorgon_Frame</defName>
+    <label>Gorgon Frame</label>
+    <!-- Less stats than the Half Jotun, but bigger size. -->
+    <description>Carriers of this gene grow to a somewhat impressive size.</description>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_Frames/Gorgon</iconPath>
+    <displayOrderInCategory>1050</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <statOffsets>
+      <SM_BodySizeOffset>0.6</SM_BodySizeOffset>
+      <SM_RaidWealthOffset>1500</SM_RaidWealthOffset>
+    </statOffsets>
+    <statFactors>
+      <MiningSpeed>1.25</MiningSpeed>
+      <DeepDrillingSpeed>1.25</DeepDrillingSpeed>
+      <MoveSpeed>1.15</MoveSpeed>
+      <ConstructionSpeed>1.25</ConstructionSpeed>
+      <CarryingCapacity>1.25</CarryingCapacity>
+      <SM_RaidWealthMultiplier>1.25</SM_RaidWealthMultiplier>
+    </statFactors>
+    <selectionWeight>0</selectionWeight>
+    <marketValueFactor>1.4</marketValueFactor>
+    <forcedTraits>
+      <li>
+        <def>BS_Giant</def>
+      </li>
+    </forcedTraits>
+  </GeneDef>
+  
+  <GeneDef ParentName="BodyFrameBase">
+    <defName>LoS_AdderFrame</defName>
+    <label>Adder Frame</label>
+    <description>Carriers of this gene are somewhat smaller than baseline humans.\n\nNote that reduced size results in decreased health, damage, and food consumption. This will not show on their stat-sheet</description>
+    <exclusionTags>
+      <li>BodySize</li>
+    </exclusionTags>
+    <iconPath>GeneIcons/BS_Frames/Adder</iconPath>
+    <displayOrderInCategory>1100</displayOrderInCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>3</biostatMet>
+    <statFactors>
+      <MiningSpeed>0.8</MiningSpeed>
+      <DeepDrillingSpeed>0.9</DeepDrillingSpeed>
+      <ConstructionSpeed>0.9</ConstructionSpeed>
+      <SM_RaidWealthMultiplier>0.75</SM_RaidWealthMultiplier>
+    </statFactors>
+    <statOffsets>
+      <SM_BodySizeOffset>-0.2</SM_BodySizeOffset>
+    </statOffsets>
+    <selectionWeight>0</selectionWeight>
+    <marketValueFactor>0.9</marketValueFactor>
+  </GeneDef>
+  
+  
+   
+  <GeneDef Name="LoS_CoilJump" Abstract="True">
+    <displayCategory>LoS_Snake_NoVis</displayCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+    <selectionWeight>1</selectionWeight>
+    <canGenerateInGeneSet>true</canGenerateInGeneSet>
+    <minAgeActive>3</minAgeActive>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>jumper</symbol></li>
+        <li><symbol>leaper</symbol></li>
+        <li><symbol>bouncer</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>jump</symbol></li>
+        <li><symbol>leap</symbol></li>
+        <li><symbol>vault</symbol></li>
+        <li><symbol>long</symbol></li>
+        <li><symbol>fly</symbol></li>
+        <li><symbol>hop</symbol></li>
+      </prefixSymbols>
+    </symbolPack>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>LoS_Snake_Tail</li>
+              <li>LoS_Snake_Tail_HairClr</li>
+              <li>LoS_Serpent_Tail</li>
+              <li>LoS_MarlithBody</li>
+              <li>LoS_Snake_Tail_NoFacialAnim</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef ParentName="LoS_CoilJump">
+    <defName>LoS_CoiledJump</defName>
+    <label>ambush</label>
+    <description>Carriers of this gene can coil their bodies and launch themselves a short distance to ambush prey.</description>
+    <iconPath>UI/Icons/Genes/Gene_LongJumpLegs</iconPath>
+    <abilities>
+      <li>LoS_Spring</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>LoS_Spring</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-2</biostatMet>
+    <exclusionTags>
+      <li>LoS_LongCoiledJump</li>
+      <li>LoS_PerfectCoiledJump</li>
+    </exclusionTags>
+    <selectionWeight>0.1</selectionWeight>
+  </GeneDef>
+  
+  <GeneDef ParentName="LoS_CoilJump">
+    <defName>LoS_LongCoiledJump</defName>
+    <label>distant ambush</label>
+    <description>Carriers of this gene can coil their bodies and launch themselves a very long distance to ambush prey.</description>
+    <iconPath>UI/Icons/Genes/Gene_LongJumpLegs</iconPath>
+    <abilities>
+      <li>LoS_Long_Spring</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>LoS_Long_Spring</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-2</biostatMet>
+    <exclusionTags>
+      <li>LoS_CoilJump</li>
+      <li>LoS_PerfectCoiledJump</li>
+    </exclusionTags>
+    <selectionWeight>0.1</selectionWeight>
+  </GeneDef>
+  
+  <GeneDef ParentName="LoS_CoilJump">
+    <defName>LoS_PerfectCoiledJump</defName>
+    <label>variable ambush</label>
+    <description>Carriers of this gene can quickly coil their bodies and launch themselves a short or very long distance to ambush prey.</description>
+    <iconPath>UI/Icons/Genes/Gene_LongJumpLegs</iconPath>
+    <displayOrderInCategory>-4</displayOrderInCategory>
+    <abilities>
+      <li>LoS_Spring</li>
+      <li>LoS_Long_Spring</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>LoS_Spring</AbilityDef>
+      <AbilityDef>LoS_Long_Spring</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-3</biostatMet>
+    <exclusionTags>
+      <li>LoS_LongCoiledJump</li>
+      <li>LoS_CoilJump</li>
+    </exclusionTags>
+    <selectionWeight>1.0</selectionWeight>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_SnekEngulf</defName>
+    <label>swallow</label>
+    <displayCategory>Ability</displayCategory>
+    <description>Temporarily engulf a smaller target and deal low damage to them for a period of time. This can be very dangerous since the victim can cause severe injuries from the inside; especially skilled and armed with a melee weapon.</description>
+    <customEffectDescriptions>
+      <li>Up to 85% of bodysize.</li>
+      <li>6 Base Damage (Acid)</li>
+      <li>Victim deals 100% damage</li>
+    </customEffectDescriptions>
+    <iconPath>Icons/BS_Swallow</iconPath>
+    <!-- <prerequisite>LoS_Snake_Tail</prerequisite> -->
+    <abilities>
+      <li>BS_SnekEngulf</li>
+      <li>BS_Regurgitate</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_SnekEngulf</AbilityDef>
+      <AbilityDef>BS_Regurgitate</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <biostatArc>0</biostatArc>
+    <minAgeActive>5</minAgeActive>
+    <selectionWeight>1</selectionWeight>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+      <li Class="BetterPrerequisites.GenePrerequisites" MayRequire="RedMattis.BetterPrerequisites">
+        <prerequisiteSets>
+          <li>
+            <type>AnyOf</type>
+            <prerequisites>
+              <li>LoS_Snake_Tail</li>
+              <li>LoS_Snake_Tail_HairClr</li>
+              <li>LoS_Serpent_Tail</li>
+              <li>LoS_MarlithBody</li>
+              <li>LoS_Snake_Tail_NoFacialAnim</li>
+            </prerequisites>
+          </li>
+        </prerequisiteSets>
+      </li>
+		</modExtensions>
+  </GeneDef>
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BS_SnekEngulf</defName>
+    <label>swallow</label>
+    <description>Swallow a target smaller than yourself.</description>
+    <iconPath>Icons/BS_Swallow</iconPath>
+    <displayOrder>100</displayOrder>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+    <hostile>true</hostile>
+    <cooldownTicksRange>2000</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>3.5</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>true</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <aiCanUse>true</aiCanUse>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_AbilityEngluf">
+        <relativeSizeThreshold>0.85</relativeSizeThreshold>
+        <internalBaseDamage>6</internalBaseDamage>
+        <selfDamageMultiplier>1</selfDamageMultiplier>
+      </li>
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Eating</capacity>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BS_Regurgitate</defName>
+    <label>regurgitate</label>
+    <description>Regurgitate everything you've engulfed.</description>
+    <iconPath>GeneIcons/BS_AcidVomit2</iconPath>
+    <displayOrder>101</displayOrder>
+    <hostile>false</hostile>
+    <targetRequired>False</targetRequired>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <cooldownTicksRange>50</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <label>regurgitate</label>
+      <violent>false</violent>
+      <warmupTime>2.5</warmupTime>
+      <range>0</range>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams>
+        <canTargetSelf>True</canTargetSelf>
+      </targetParams>
+    </verbProperties>
+    <aiCanUse>false</aiCanUse>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_AbilityRegurgitate"/>
+    </comps>
+  </AbilityDef>
+  
+  <GeneDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+    <defName>LoS_Voice</defName>
+    <label>Alluring Voice</label>
+    <description>Carriers of this gene possess a strange and wondrous voice.</description>
+    <biostatMet>-1</biostatMet>
+    <biostatCpx>2</biostatCpx>
+    <iconPath>Icons/tune_icon</iconPath>
+    <statOffsets>
+      <SM_RaidWealthOffset>2500</SM_RaidWealthOffset>
+      <SocialImpact>0.25</SocialImpact>
+      <TradePriceImprovement>0.075</TradePriceImprovement>
+      <NegotiationAbility>0.25</NegotiationAbility>
+    </statOffsets>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <hediffToWholeBody>LoS_Voice</hediffToWholeBody>
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+		</modExtensions>
+  </GeneDef>
+  
+  <!--Actual graphic... pending.-->
+  <!-- <GeneDef ParentName="BodyFrameBase"> -->
+    <!-- <defName>LoS_SnakeSkin</defName> -->
+    <!-- <label>Snake Skin</label> -->
+    <!-- <description>Carriers of this gene are covered in scaled snake-like skin</description> -->
+    <!-- <exclusionTags> -->
+      <!-- <li>Fur</li> -->
+      <!-- <li>BeardStyle</li> -->
+    <!-- </exclusionTags> -->
+    <!-- <iconPath>UI/Icons/Genes/Gene_SkinColorOverride</iconPath> -->
+    <!-- <displayOrderInCategory>1100</displayOrderInCategory> -->
+    <!-- <biostatCpx>1</biostatCpx> -->
+    <!-- <biostatMet>0</biostatMet> -->
+  <!-- </GeneDef> -->
+
+</Defs>

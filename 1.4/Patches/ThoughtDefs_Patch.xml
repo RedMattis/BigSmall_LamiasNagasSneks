@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/ThoughtDef[defName = "AteWithoutTable"]/nullifyingGenes</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "AteWithoutTable"]</xpath>
+			<value>
+				<nullifyingGenes>
+					<li>LoS_Snake_Tail</li>
+					<li>LoS_Snake_Tail_HairClr</li>
+					<li>LoS_Serpent_Tail</li>
+					<li>LoS_MarlithBody</li>
+				</nullifyingGenes>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "AteWithoutTable"]/nullifyingGenes</xpath>
+			<value>
+				<li>LoS_Snake_Tail</li>
+				<li>LoS_Snake_Tail_HairClr</li>
+				<li>LoS_Serpent_Tail</li>
+				<li>LoS_MarlithBody</li>
+			</value>
+		</match>
+	</Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThoughtDef[defName="GroinUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
+    <value>
+      <li>LoS_Snake_Tail</li>
+			<li>LoS_Snake_Tail_HairClr</li>
+			<li>LoS_Serpent_Tail</li>
+			<li>LoS_MarlithBody</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/ThoughtDef[defName="GroinUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
+    <value>
+      <li>LoS_Snake_Tail</li>
+			<li>LoS_Snake_Tail_HairClr</li>
+			<li>LoS_Serpent_Tail</li>
+			<li>LoS_MarlithBody</li>
+    </value>
+  </Operation>
+
+</Patch>

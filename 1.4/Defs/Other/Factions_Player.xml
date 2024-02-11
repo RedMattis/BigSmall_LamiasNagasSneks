@@ -1,0 +1,62 @@
+<Defs>
+
+  <FactionDef ParentName="PlayerFactionBase">
+    <defName>LoS_ViperPlayerColony</defName>
+    <label>Viper Expidition</label>
+    <description>A colony of recently-arrived off-worlders.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Colonist</basicMemberKind>
+    <pawnSingular>viper</pawnSingular>
+    <pawnsPlural>vipers</pawnsPlural>
+    <techLevel>Ultra</techLevel>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <allowedCultures><li>Astropolitan</li></allowedCultures>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>Icons/LoS_Viper_Faction_Icon</factionIconPath>
+
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <Hussar>0.20</Hussar>
+        <Neanderthal>0.05</Neanderthal>
+        <LoS_Lamia>0.30</LoS_Lamia>
+        <VRE_Lowmate MayRequire="vanillaracesexpanded.highmate">0.10</VRE_Lowmate>
+        <LoS_Siren>0.05</LoS_Siren>
+        <LoS_Gorgon>0.02</LoS_Gorgon>
+        <BS_PinkSlime MayRequire="RedMattis.BSSlimes">0.02</BS_PinkSlime>
+        <BS_ElixirSlime MayRequire="RedMattis.BSSlimes">0.02</BS_ElixirSlime>
+      </xenotypeChances>
+      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+    </xenotypeSet>
+    
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>DevilstrandCloth</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    <colorSpectrum>
+      <li>(34,30,34)</li>
+      <li>(0.35,0.15,0.35)</li>
+    </colorSpectrum>
+    <!-- <modExtensions>
+      <li Class="BigAndSmall.FactionExtension">
+        <wandererPawnkind>LoS_ViperWanderer</wandererPawnkind>
+        <forceWandererToPlayerXenotypes>true</forceWandererToPlayerXenotypes>
+			</li>
+    </modExtensions> -->
+  </FactionDef>
+
+</Defs>

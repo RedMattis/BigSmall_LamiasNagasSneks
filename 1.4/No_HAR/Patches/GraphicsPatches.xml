@@ -1,0 +1,29 @@
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[NL] Facial Animation - WIP</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/GeneDef[defName="LoS_SnekSnoot"]</xpath>
+          <value>
+            <graphicData>
+              <graphicPath>Pawn/Head/LoS_SnekHead_thin</graphicPath>
+              <!-- <graphicPath>Pawn/Head/LoS_SnekHead_NoMouth</graphicPath> --> <!--Trust me it is horribly cursed.-->
+              <layer>PostSkin</layer>
+              <colorType>Skin</colorType>
+              <useSkinShader>false</useSkinShader>
+              <drawLoc>HeadTop</drawLoc>
+              <drawOffset>(0, 0.03035328, 0)</drawOffset>
+              <drawIfFaceCovered>true</drawIfFaceCovered>
+            </graphicData>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+
+</Patch>

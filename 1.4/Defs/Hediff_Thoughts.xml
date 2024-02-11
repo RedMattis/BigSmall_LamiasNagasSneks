@@ -1,0 +1,31 @@
+<Defs>
+  <ThoughtDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+		<defName>LoS_Voice</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>beautiful voice</label>
+				<description>I heard a voice that put me strangely at ease.</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+  
+  <HediffDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+		<defName>LoS_Voice</defName>
+		<label>beautiful voice</label>
+		<description>This person has a strangely soothing voice and can sing hauntingly beautiful melodies.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="AnimalBehaviours.HediffCompProperties_ThoughtEffecter">
+				<radius>12</radius>
+				<tickInterval>500</tickInterval>
+				<thoughtDef>LoS_Voice</thoughtDef>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

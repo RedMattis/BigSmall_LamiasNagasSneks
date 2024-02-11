@@ -1,0 +1,136 @@
+<Defs>
+  <GeneDef>
+    <defName>BS_GorgonPetrify</defName>
+    <label>paralyzing gaze</label>
+    <description>Carriers can stun foes in a huge radius with seemingly just an intense glare in their general direction.</description>
+    <iconPath>Icons/BS_gorgon_AoE</iconPath>
+    <prerequisite>BS_GorgonPetrifyCloseRange</prerequisite>
+    <displayCategory>Ability</displayCategory>
+    <marketValueFactor>1.5</marketValueFactor>
+    <abilities>
+      <li>BS_GorgonPetrify</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_GorgonPetrify</AbilityDef>
+    </descriptionHyperlinks>
+    <statOffsets>
+			<SM_RaidWealthOffset>1000</SM_RaidWealthOffset>
+		</statOffsets>
+    <biostatMet>-2</biostatMet>
+    <biostatArc>3</biostatArc>
+    <symbolPack>
+      <suffixSymbols>
+        <li><symbol>petrifier</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+    <selectionWeight>1</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>BS_GorgonPetrifyCloseRange</defName>
+    <label>petrification</label>
+    <description>Carriers can temporarily petrify a target in melee.</description>
+    <iconPath>Icons/BS_gorgon_SingleTarget</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <marketValueFactor>1</marketValueFactor>
+    <statOffsets>
+			<SM_RaidWealthOffset>500</SM_RaidWealthOffset>
+		</statOffsets>
+    <abilities>
+      <li>BS_GorgonPointBlankPetrify</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_GorgonPointBlankPetrify</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <symbolPack>
+      <suffixSymbols>
+        <li><symbol>petrifier</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+    <selectionWeight>1</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneHairStyleBase">
+		<defName>BS_GorgonHair</defName>
+		<label>snake hair</label>
+		<displayCategory>Cosmetic</displayCategory>
+		<description>Carriers of this gene have snakes on their head. The snakes can actually hold things; usually impractical, but quite adorable.</description>
+		<iconPath>Icons/BS_GorgonHair_icon</iconPath>
+		<biostatCpx>0</biostatCpx>
+    <capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>0.02</offset>
+			</li>
+		</capMods>
+    <graphicData>
+      <!-- Post Tattoo before Headgear-->
+      <drawOffsetNorth>(0.0, -0.002, -0.0)</drawOffsetNorth>
+			<drawOffsetSouth>(-0.0, -0.002, -0.0)</drawOffsetSouth>
+			<drawOffsetEast>(-0.0, -0.004, -0.0)</drawOffsetEast>
+      <drawLoc>HeadTop</drawLoc>
+      <layer>PostTattoo</layer>
+
+      <!-- Pre-head post armour.-->
+      <!-- <drawOffsetNorth>(0.0, -0.01, -0.0)</drawOffsetNorth>
+			<drawOffsetSouth>(-0.0, -0.01, -0.0)</drawOffsetSouth>
+			<drawOffsetEast>(-0.0, -0.01, -0.0)</drawOffsetEast>
+      <layer>PostSkin</layer> -->
+      <color>(255, 255, 255)</color>
+			<graphicPath>BS_Hair/GorgonHair_a</graphicPath>
+      <useSkinShader>false</useSkinShader>
+      <colorType>Hair</colorType>
+      <drawWhileDessicated>false</drawWhileDessicated>
+    </graphicData>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>BS_GorgonHaired</li>
+			</tags>
+		</hairTagFilter>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+<!-- 
+  <StyleItemCategoryDef>
+    <defName>BS_Snek</defName>
+    <label>gorgon</label>
+  </StyleItemCategoryDef>
+
+  <HairDef>
+		<defName>BS_GorgonHairA</defName>
+		<label>snake hair a</label>
+		<styleGender>Any</styleGender>
+		<texPath>BS_Hair/GorgonHair_a</texPath>
+		<category>BS_Snek</category>
+		<styleTags>
+			<li>BS_GorgonHaired</li>
+			<li>Shaved</li>
+			<li>Urban</li>
+			<li>Punk</li>
+			<li>Rural</li>
+			<li>Tribal</li>
+			<li>Soldier</li>
+			<li>HairShort</li>
+		</styleTags>
+		<requiredGene>BS_GorgonHair</requiredGene>
+	</HairDef> -->
+
+</Defs>

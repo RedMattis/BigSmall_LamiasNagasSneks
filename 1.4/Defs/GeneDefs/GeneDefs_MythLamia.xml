@@ -1,0 +1,119 @@
+<Defs>
+  <GeneDef>
+    <defName>LoS_Babyeater</defName>
+    <label>child-eater</label>
+    <displayCategory>Ability</displayCategory>
+    <description>Carriers of this gene are cursed to consume the live babies and children of other xenohumans.\n\nThis ability will only work on babies and children, and they must be significantly smaller than the user. You monster.</description>
+    <iconPath>Icons/LoS_Infancidier</iconPath>
+    <!-- <prerequisite>LoS_Snake_Tail</prerequisite> -->
+    <abilities>
+      <li>LoS_Babyeater</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>LoS_Babyeater</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>11</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>cursed</symbol></li>
+        <li><symbol>foul</symbol></li>
+        <li><symbol>dreadful</symbol></li>
+        <li><symbol>nightmarish</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>child-eater</symbol></li>
+        <li><symbol>monster</symbol></li>
+        <li><symbol>hungering horror</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+    <geneClass>BigAndSmall.BS_GeneCursedPower</geneClass>
+    <!-- <geneClass>Gene_Hemogen</geneClass> -->
+    <resourceGizmoType>GeneGizmo_ResourceHemogen</resourceGizmoType>
+    <resourceLabel>cursed power</resourceLabel>
+    <resourceGizmoThresholds>
+      <li>0.25</li>
+      <li>0.5</li>
+      <li>0.75</li>
+    </resourceGizmoThresholds>
+    <showGizmoOnWorldView>true</showGizmoOnWorldView>
+    <showGizmoWhenDrafted>true</showGizmoWhenDrafted>
+    <resourceDescription>A reserve of cursed strength which can be gained and spent in a variety of ways.\n\nIf the reserve reaches zero, {PAWN_nameDef} will become very unhappy.</resourceDescription>
+    <minAgeActive>15</minAgeActive>
+    <resourceLossPerDay>0.050</resourceLossPerDay>
+    <selectionWeight>0</selectionWeight>
+    <exclusionTags>
+      <li>Hemogenic</li>
+      <li>HemogenDrain</li>
+    </exclusionTags>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>LoS_CursedAcidSpray</defName>
+    <label>foul acid</label>
+    <description>Carriers grow can vomit up surprisingly large amounts of potent stomach acid. They can spew this acid over an area, where it will stick to enemies and burn them over time.</description>
+    <iconPath>UI/Icons/Genes/Gene_AcidSpray</iconPath>
+    <prerequisite>LoS_Babyeater</prerequisite>
+    <displayCategory>Ability</displayCategory>
+    <marketValueFactor>1.5</marketValueFactor>
+    <abilities>
+      <li>LoS_CursedAcidSpray</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>LoS_CursedAcidSpray</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-2</biostatMet>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>acid</symbol></li>
+        <li><symbol>acer</symbol></li>
+        <li><symbol>acri</symbol></li>
+        <li><symbol>oxo</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>sprayer</symbol></li>
+        <li><symbol>spitter</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+    <selectionWeight>0</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>LoS_CursedHealing</defName>
+    <label>Cursed Healing</label>
+    <description>Carriers of this gene can heal permanent injuries in themselves or other though at a terrible cost.</description>
+    <iconPath>Icons/CursedHealing</iconPath>
+    <prerequisite>LoS_Babyeater</prerequisite>
+    <displayCategory>Ability</displayCategory>
+    <marketValueFactor>2.0</marketValueFactor>
+    <abilities>
+      <li>BS_Regenerate_Cheap</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_Regenerate_Cheap</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <selectionWeight>0</selectionWeight>
+    <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+  </GeneDef>
+
+  <Hediff>
+  </Hediff>
+
+</Defs>
