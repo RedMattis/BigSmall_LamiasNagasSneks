@@ -1,0 +1,20 @@
+<Defs>
+
+  <PawnKindDef ParentName="BS_Tribal_Wildman">
+    <defName>BS_Tribal_Wildman_Snek</defName>
+    <label>snake warrior</label>
+    <combatPower>60</combatPower>
+    <chemicalAddictionChance>0.0</chemicalAddictionChance>
+    <!-- <race>BS_Naga_HideFacialAnim</race> -->
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="Tribal_Wildman_Leader">
+    <defName>BS_Tribal_Wildman_Leader_Snek</defName>
+    <label>snake warrior</label>
+    <combatPower>80</combatPower>
+    <chemicalAddictionChance>0.0</chemicalAddictionChance>
+    <!-- <race>BS_Naga_HideFacialAnim</race> -->
+  </PawnKindDef>
+  
+
+</Defs>

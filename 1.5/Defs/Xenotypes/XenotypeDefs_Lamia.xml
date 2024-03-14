@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <XenotypeDef>
+    <defName>LoS_Lamia</defName>
+    <label>Lamia</label>
+    <description>In myth Lamia was a cursed woman cursed by Hera, Lamia is most known for devouring children.\n\nThese particular xenohumans were originally created by a crime syndicate who used them as entertainers, bodyguards, and assassins.</description>
+    <descriptionShort>Snake-like female assassins employed on some urbworlds.</descriptionShort>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1</combatPowerFactor>
+    <iconPath>Xenotypes/BS_Snek</iconPath>
+    <genes>
+			<li>BS_SlowBleeding</li>
+      <li>Skin_DeepRed</li>
+      <li>Skin_DeepYellow</li>
+      <li>Skin_SlateGray</li>
+      <li>Skin_Green</li>
+      <li>Skin_LightGray</li>
+      <li>Beard_NoBeardOnly</li>
+      <li>LoS_Snake_Tail</li>
+			<li>BS_Diet_Carnivore</li>
+			<li>BS_StickyAcidSpray</li>
+			<li>NakedSpeed</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>ToxResist_Partial</li>
+			<li>Aggression_Aggressive</li>
+			<li>Sleepy</li>
+			<li>Cannibal</li>
+			<li>BS_Ears_PointedHD</li>
+			<li>Body_Standard</li>
+      <li>Body_Thin</li>
+			<li>Body_Androgynous</li>
+			<li>StrongStomach</li>
+			<li>RobustDigestion</li>
+			<li>DarkVision</li>
+			<li>Instability_Mild</li>
+			<li>AptitudeStrong_Melee</li>
+			<li>AptitudePoor_Plants</li>
+			<li>AptitudeTerrible_Animals</li>
+			<li>AptitudeStrong_Social</li>
+    </genes>
+  </XenotypeDef>
+  
+  <XenotypeDef>
+    <!--This one is not yet done-->
+    <defName>LoS_TrueLamia</defName>
+    <label>Lamia?</label>
+    <description>In myth Lamia was a cursed woman cursed by Hera. Lamia is most known for devouring children.\n\nLamia were originally created by a crime syndicate who used them as entertainers, bodyguards, and assassins, but this one doesn't seem quite like the rest.</description>
+    <descriptionShort>Snake-like female assassins employed on some urbworlds.</descriptionShort>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1</combatPowerFactor>
+    <iconPath>Xenotypes/BS_Snek</iconPath>
+		<factionlessGenerationWeight>0.1</factionlessGenerationWeight>
+    <genes>
+			<li>Ageless</li>
+			<li>ArchiteMetabolism</li>
+			<li>DiseaseFree</li>
+			<li>PerfectImmunity</li>
+			<li>TotalHealing</li>
+			<li>LoS_CoiledJump</li>
+			<li>LoS_Snake_Tail_HairClr</li>
+			<li>BS_Diet_Carnivore</li>
+			<li>WoundHealing_SuperFast</li>
+			<li>PsychicAbility_Extreme</li>
+			<li>NakedSpeed</li>
+			<li>Mood_Depressive</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>ToxResist_Total</li>
+			<li>Aggression_Aggressive</li>
+			<li>KillThirst</li>
+			<li>Neversleep</li>
+			<li>Body_FemaleOnly</li>
+			<li>Libido_High</li>
+			<li>Fertile</li>
+			<li>Beauty_Beautiful</li>
+			<li>BS_Ears_PointedHD</li>
+			<li>Body_Standard</li>
+			<!-- <li>Skin_Green</li> -->
+			<li>BS_MatteGreenHair</li>
+			<li>LoS_Babyeater</li>
+			<li>Cannibal</li>
+			<li>StrongStomach</li>
+			<li>RobustDigestion</li>
+			<li>Learning_Fast</li>
+			<li>DarkVision</li>
+			<li>Instability_Major</li>
+			<li>AptitudeTerrible_Animals</li>
+			<li>AptitudeStrong_Medicine</li>
+			<li>AptitudeRemarkable_Social</li>
+      <li>LoS_CursedAcidSpray</li>
+      <li>Superclotting</li>
+      <li>LoS_CursedHealing</li>
+		</genes>
+  </XenotypeDef>
+
+  
+  <XenotypeDef>
+    <defName>LoS_Siren</defName>
+    <label>Siren</label>
+    <description>In myth Siren were creatures with an unbelivably beautiful singing voice usually depicted as birds rather than fish-ladies.\n\nThese particular xenohumans were created on an urbworld to act as entertainers on stages at fancy clubs.</description>
+    <descriptionShort>Large singing fish-women.</descriptionShort>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>1.2</combatPowerFactor>
+    <iconPath>Xenotypes/BS_Snek</iconPath>
+    <genes>
+      <li>LoS_SirenFrame</li>
+			<li>LoS_Snake_Tail</li>
+			<li>BS_Diet_Carnivore</li>
+			<li>NakedSpeed</li>
+			<li>Mood_Depressive</li>
+			<li>MinTemp_LargeDecrease</li>
+			<li>MaxTemp_SmallIncrease</li>
+			<li>Aggression_DeadCalm</li>
+      <li>Beard_NoBeardOnly</li>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">LoS_Voice</li>
+			<li>Sleepy</li>
+			<li>Robust</li>
+			<li>Body_FemaleOnly</li>
+			<li>Sterile</li>
+			<li>Beauty_Beautiful</li>
+			<li>Hair_LongOnly</li>
+			<li>Body_Standard</li>
+			<li>BS_Very_Passioned_Learning_Gene</li>
+			<li>StrongStomach</li>
+			<li>RobustDigestion</li>
+			<li>AptitudeTerrible_Cooking</li>
+			<li>AptitudeStrong_Animals</li>
+			<li>AptitudeRemarkable_Social</li>
+			<li>ChemicalDependency_WakeUp</li>
+    </genes>
+  </XenotypeDef>
+
+	<XenotypeDef>
+    <defName>LoS_Gorgon</defName>
+    <label>Gorgon</label>
+    <description>In some mythological stories the gorgons were female golden-winged created by Gaea to aid her sons; the giants; in their war against the gods. They are often depicted with a mass of living snakes in the place of hair.\n\nAccording to the stories they are ageless and immortal, though in reality they are just incredibly tough.</description>
+    <descriptionShort>Mythical female golder-winged monster with the power to paralyze their foes.</descriptionShort>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>3</combatPowerFactor>
+    <iconPath>Xenotypes/LoS_SnakeHair</iconPath>
+    <genes>
+			<li>LoS_Snake_Tail_HairClr</li>
+			<li>BS_GorgonHair</li>
+			<li>Ageless</li>
+			<li>ArchiteMetabolism</li>
+			<li>DiseaseFree</li>
+			<li>PerfectImmunity</li>
+			<li>TotalHealing</li>
+			<li>Robust</li>
+			<li>BS_SlowBleeding</li>
+			<!-- <li>BS_NaturalArmor</li> -->
+			<li>BS_NaturalArmor_Great</li>
+			<li>BS_Diet_Carnivore</li>
+			<li>LoS_Gorgon_Frame</li>
+			<li>BS_GorgonPetrify</li>
+			<li>BS_GorgonPetrifyCloseRange</li>
+			<li>BS_StickyAcidSpray</li>
+			<li>WoundHealing_Fast</li>
+			<li>NakedSpeed</li>
+			<li>Mood_Depressive</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>BS_Bloodlust</li>
+			<li>Aggression_Aggressive</li>
+			<!-- <li>LowSleep</li> -->
+			<li>BS_AcidResistanceMid</li>
+			<li>Body_FemaleOnly</li>
+			<li>Body_Standard</li>
+			<li>BS_MatteGreenHair</li>
+			<li>BS_LightGreenSkin</li>
+			<li>StrongStomach</li>
+			<li>RobustDigestion</li>
+			<li>DarkVision</li>
+			<li>Hair_Grayless</li>
+			<li>Unstoppable</li>
+			<li>BS_GoldenGorgonWings</li>
+			<li>AptitudeTerrible_Cooking</li>
+			<li>AptitudePoor_Plants</li>
+			<li>AptitudePoor_Social</li>
+			<li>AptitudePoor_Artistic</li>
+		</genes>
+  </XenotypeDef>
+</Defs>

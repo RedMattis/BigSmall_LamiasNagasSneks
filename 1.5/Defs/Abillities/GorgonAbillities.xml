@@ -1,0 +1,96 @@
+<Defs>
+  <AbilityDef>
+    <defName>BS_GorgonPetrify</defName>
+    <label>paralyzing gaze</label>
+    <description>Stun your foes with a paralyzing gaze, this can be blocked by barriers.</description>
+    <iconPath>Icons/BS_gorgon_AoE</iconPath>
+    <!-- <cooldownTicksRange>4000</cooldownTicksRange> -->
+    <cooldownTicksRange>4000</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <displayOrder>101</displayOrder>
+    <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>19.9</range> <!--Mostly relevant for AI use since the actual ability hits further than that.-->
+      <warmupTime>2</warmupTime>
+      <soundCast>AcidSpray_Resolve</soundCast>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_AbilityConeAttack">
+        <projectileDef>BS_GorgonGlare</projectileDef>
+        <maxAngle>180</maxAngle>
+        <minAngle>27</minAngle> <!--Adjusted because the range verb is less than the range of the comp.-->
+        <maxDistance>18</maxDistance>
+        <minDistnace>7</minDistnace>
+        <!-- <sprayEffecter>AcidSpray_Directional</sprayEffecter> -->
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <ThingDef>
+    <defName>BS_GorgonGlare</defName>
+    <label>petrifying glare</label>
+    <!-- <thingClass>Projectile_Liquid</thingClass> -->
+    <thingClass>BigAndSmall.ProjectileGorgonStareProjectile</thingClass>
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <graphicClass>Graphic_FleckPulse</graphicClass>
+      <shaderType>GlowAnimated</shaderType>
+      <texPath>Things/Mote/FireSpew_A</texPath>
+      <drawRotated>true</drawRotated>
+      <allowFlip>true</allowFlip>
+      <drawSize>0</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Stun</damageDef>
+      <speed>300</speed>
+      <explosionRadius>0.9</explosionRadius>
+      <damageAmountBase>12</damageAmountBase>
+      <arcHeightFactor>2</arcHeightFactor>
+      <armorPenetrationBase>0</armorPenetrationBase>
+      <stoppingPower>5</stoppingPower>
+      <shadowSize>0</shadowSize>
+      <screenShakeFactor>0.1</screenShakeFactor>
+    </projectile>
+  </ThingDef>
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BS_GorgonPointBlankPetrify</defName>
+    <label>petrification</label>
+    <description>Stun your foes with a point-blank paralyzing glare that leaves them paralyzed in place for a long time.</description>
+    <iconPath>Icons/BS_gorgon_SingleTarget</iconPath>
+    <!-- <cooldownTicksRange>4000</cooldownTicksRange> -->
+    <cooldownTicksRange>2000</cooldownTicksRange>
+    <aiCanUse>true</aiCanUse>
+    <displayOrder>101</displayOrder>
+    <warmupStartSound>AcidSpray_Warmup</warmupStartSound>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>true</drawAimPie>
+      <range>-1</range>
+      <warmupTime>1.25</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>true</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_MeleeAttackAbility">
+        <!--How large the target can be compared to the lamia. 0.80 means max 80% of body size-->
+        <damageDef>Stun</damageDef>
+        <damageAmount>20</damageAmount>
+        <asExplosion>true</asExplosion>
+      </li>
+  </comps>
+  </AbilityDef>
+</Defs>

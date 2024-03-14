@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-	<name>Lamias, Sirens, Snakemen, and other Serpents-like beings</name>
+	<!-- <name>Lamias, Sirens, Snakemen, and other Serpents-like beings</name> -->
+	<name>Big and Small - Lamias and other Snake-People</name>
 	<author>RedMattis</author>
 	<supportedVersions>
 		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
 	<packageId>RedMattis.LamiasAndOtherSnakes</packageId>
 	<modDependencies>

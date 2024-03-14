@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeIconDef>
+    <defName>BS_Snek_Icon</defName>
+    <texPath>Xenotypes/BS_Snek</texPath>
+  </XenotypeIconDef>
+ 
+
+</Defs>

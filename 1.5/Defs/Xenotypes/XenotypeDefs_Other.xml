@@ -1,0 +1,65 @@
+<Defs>
+  <XenotypeDef>
+    <defName>BS_ViperPrototypeBiomecha</defName>
+    <label>VIPER Prototype Bio-Mecha</label>
+    <description>This creature appears to have been grown in some sort of lab and then heavily modified with xenobionics. The pilot's nerves are connected directly to the mech, hopefully without any unfortunate side-effects.</description>
+    <descriptionShort>immense pilotable semi-organic robot.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>BS_NamerRobot</nameMaker>
+    <combatPowerFactor>3.5</combatPowerFactor>
+    <chanceToUseNameMaker>1.0</chanceToUseNameMaker>
+    <genes>
+      <li>BS_HeatGenerator</li>
+			<li>Ageless</li>
+			<!-- <li>Deathless</li> -->
+			<li>DiseaseFree</li>
+			<li>PerfectImmunity</li>
+			<li>TotalHealing</li>
+			<!-- <li>BS_NaturalArmor_Great</li> -->
+      <li>BS_ToughSkin</li>
+			<li>TitanFrame</li>
+			<li>BS_CannotWearClothing</li>
+			<li>VU_Unliving</li>
+			<li>BS_SlowBleeding</li>
+			<li>WoundHealing_VerySlow</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>BS_Very_Slow</li>
+			<li>Mood_Depressive</li>
+			<li>MinTemp_HugeDecrease</li>
+			<li>ToxResist_Total</li>
+			<li>BS_AnimalFriend</li>
+			<li>Aggression_Aggressive</li>
+			<li>LowSleep</li>
+			<li>Pain_Reduced</li>
+			<li>VU_Libido_None</li>
+			<li>BS_NotFlirty</li>
+			<li>Sterile</li>
+			<li>Hair_BaldOnly</li>
+      <li>Body_Standard</li>
+      <li>Body_Hulk</li>
+
+      <!-- Need to get/make proper more pristine android body/heads...-->
+      <li>BS_BrokenTitanHead</li>
+			<!-- <li>BS_BrokenTitanBody</li> -->
+			<li>BS_Skin_DarkAsh</li>
+			<li>BS_Pilotable</li>
+			<li>StrongStomach</li>
+			<li>DarkVision</li>
+			<li>Unstoppable</li>
+			<li>AptitudePoor_Cooking</li>
+			<li>AptitudePoor_Plants</li>
+			<li>AptitudeTerrible_Animals</li>
+			<li>AptitudeTerrible_Crafting</li>
+			<li>AptitudePoor_Artistic</li>
+			<li>AptitudeTerrible_Medicine</li>
+			<li>AptitudePoor_Social</li>
+      <li MayRequire="nals.facialanimation">BS_FacialAnimDisabled</li>
+    </genes>
+    <forbiddenWeaponClasses>
+      <li>RangedLight</li>
+    </forbiddenWeaponClasses>
+    <factionlessGenerationWeight>0.0</factionlessGenerationWeight>
+  </XenotypeDef>
+
+</Defs>

@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<Defs>
+
+  <GeneDef ParentName="GeneJawBase">
+    <defName>LoS_SnekSnoot</defName>
+    <label>snake snoot</label>
+    <description>Carriers of this gene have a snake-like head.</description>
+    <geneClass>BetterPrerequisites.PGene</geneClass>
+    <iconPath>Icons/LoS_SnekHead_icon</iconPath>
+    <forcedHeadTypes>
+      <li>LoS_SnekHead</li>
+    </forcedHeadTypes>
+    <missingGeneRomanceChanceFactor>0.10</missingGeneRomanceChanceFactor>
+    <statOffsets>
+      <EatingSpeed>0.5</EatingSpeed>
+    </statOffsets>
+    <statFactors>
+      <SM_HeadSize_Cosmetic>0.9</SM_HeadSize_Cosmetic>
+    </statFactors>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <displayCategory>LoS_Snake_Vis</displayCategory>
+    <displayOrderInCategory>410</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>snoot</symbol>
+        </li>
+        <li>
+          <symbol>snake</symbol>
+        </li>
+        <li>
+          <symbol>snek</symbol>
+        </li>
+        <li>
+          <symbol>sniffer</symbol>
+        </li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li>
+          <symbol>snoot</symbol>
+        </li>
+        <li>
+          <symbol>boop</symbol>
+        </li>
+        <li>
+          <symbol>snake</symbol>
+        </li>
+        <li>
+          <symbol>snek</symbol>
+        </li>
+      </suffixSymbols>
+    </symbolPack>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+      <li Class="BetterPrerequisites.GeneExtension">
+        <facialDisabler/>
+      </li>
+    </modExtensions>
+  </GeneDef>
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>LoS_SnekHead</defName>
+    <graphicPath>Pawn/Head/LoS_SnekHead_thin</graphicPath>
+    <randomChosen>false</randomChosen>
+    <gender>None</gender>
+    <selectionWeight>999999</selectionWeight>
+    <requiredGenes>
+      <li>LoS_SnekSnoot</li>
+    </requiredGenes>
+  </HeadTypeDef>
+</Defs>

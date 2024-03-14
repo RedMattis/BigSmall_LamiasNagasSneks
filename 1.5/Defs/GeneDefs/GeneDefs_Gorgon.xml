@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<Defs>
+  <GeneDef>
+    <defName>BS_GorgonPetrify</defName>
+    <label>paralyzing gaze</label>
+    <description>Carriers can stun foes in a huge radius with seemingly just an intense glare in their general direction.</description>
+    <iconPath>Icons/BS_gorgon_AoE</iconPath>
+    <prerequisite>BS_GorgonPetrifyCloseRange</prerequisite>
+    <displayCategory>Ability</displayCategory>
+    <marketValueFactor>1.5</marketValueFactor>
+    <abilities>
+      <li>BS_GorgonPetrify</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_GorgonPetrify</AbilityDef>
+    </descriptionHyperlinks>
+    <statOffsets>
+      <SM_RaidWealthOffset>1000</SM_RaidWealthOffset>
+    </statOffsets>
+    <biostatMet>-2</biostatMet>
+    <biostatArc>3</biostatArc>
+    <symbolPack>
+      <suffixSymbols>
+        <li>
+          <symbol>petrifier</symbol>
+        </li>
+      </suffixSymbols>
+    </symbolPack>
+    <selectionWeight>1</selectionWeight>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
+  <GeneDef>
+    <defName>BS_GorgonPetrifyCloseRange</defName>
+    <label>petrification</label>
+    <description>Carriers can temporarily petrify a target in melee.</description>
+    <iconPath>Icons/BS_gorgon_SingleTarget</iconPath>
+    <displayCategory>Ability</displayCategory>
+    <marketValueFactor>1</marketValueFactor>
+    <statOffsets>
+      <SM_RaidWealthOffset>500</SM_RaidWealthOffset>
+    </statOffsets>
+    <abilities>
+      <li>BS_GorgonPointBlankPetrify</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>BS_GorgonPointBlankPetrify</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <symbolPack>
+      <suffixSymbols>
+        <li>
+          <symbol>petrifier</symbol>
+        </li>
+      </suffixSymbols>
+    </symbolPack>
+    <selectionWeight>1</selectionWeight>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+  </GeneDef>
+  <GeneDef ParentName="GeneHairStyleBase">
+    <defName>BS_GorgonHair</defName>
+    <label>snake hair</label>
+    <displayCategory>Cosmetic</displayCategory>
+    <description>Carriers of this gene have snakes on their head. The snakes can actually hold things; usually impractical, but quite adorable.</description>
+    <iconPath>Icons/BS_GorgonHair_icon</iconPath>
+    <biostatCpx>0</biostatCpx>
+    <capMods>
+      <li>
+        <capacity>Manipulation</capacity>
+        <offset>0.02</offset>
+      </li>
+    </capMods>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+      <tags>
+        <li>BS_GorgonHaired</li>
+      </tags>
+    </hairTagFilter>
+    <modExtensions>
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
+        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
+      </li>
+    </modExtensions>
+    <renderNodeProperties Inherit="False">
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>BS_Hair/GorgonHair_a</texPath>
+        <color>(255, 255, 255)</color>
+        <useSkinShader>false</useSkinShader>
+        <colorType>Hair</colorType>
+        <drawData>
+          <defaultData>
+            <layer>52</layer>
+          </defaultData>
+          <dataNorth>
+            <offset>(0.0, 0, -0.0)</offset>
+          </dataNorth>
+          <dataSouth>
+            <offset>(-0.0, 0, -0.0)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(-0.0, 0, -0.0)</offset>
+          </dataEast>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+</Defs>

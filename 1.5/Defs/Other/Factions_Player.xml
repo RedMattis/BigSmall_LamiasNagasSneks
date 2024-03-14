@@ -32,7 +32,6 @@
         <BS_PinkSlime MayRequire="RedMattis.BSSlimes">0.02</BS_PinkSlime>
         <BS_ElixirSlime MayRequire="RedMattis.BSSlimes">0.02</BS_ElixirSlime>
       </xenotypeChances>
-      <warnIfTotalAbove1>false</warnIfTotalAbove1>
     </xenotypeSet>
     
     <startingResearchTags>
@@ -135,7 +134,6 @@
         <BS_PinkSlime MayRequire="RedMattis.BSSlimes">0.02</BS_PinkSlime>
         <BS_ElixirSlime MayRequire="RedMattis.BSSlimes">0.02</BS_ElixirSlime>
       </xenotypeChances>
-      <warnIfTotalAbove1>false</warnIfTotalAbove1>
     </xenotypeSet>
   </PawnKindDef>
 

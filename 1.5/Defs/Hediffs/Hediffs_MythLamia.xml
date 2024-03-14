@@ -1,0 +1,13 @@
+<Defs>
+
+  <HediffDef>
+    <defName>LoS_MythLamiaHD</defName>
+    <label>LoS_MythLamiaHD</label>
+    <description>Removed in this version.</description>
+    <isBad>false</isBad>
+    <maxSeverity>6</maxSeverity>
+    <makesSickThought>false</makesSickThought>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>0.1</initialSeverity>
+  </HediffDef>
+</Defs>
