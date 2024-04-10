@@ -51,7 +51,7 @@
     <label>Giant Anacondaman</label>
     <description>Anacondaman look like snakes with a somewhat humanoid torso and arms.\n\nBeware of their constriction attack and that they may attempt to swallow smaller foes whole. Those armed with melee weapons (or tooth and claw) have a decent chance to cut their way out given time..</description>
     <inheritable>true</inheritable>
-    <combatPowerFactor>3</combatPowerFactor>
+    <combatPowerFactor>4</combatPowerFactor>
     <iconPath>Xenotypes/BS_Snek</iconPath>
     <factionlessGenerationWeight>0.5</factionlessGenerationWeight>
     <genes>

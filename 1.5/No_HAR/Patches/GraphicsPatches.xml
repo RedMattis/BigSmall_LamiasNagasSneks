@@ -9,21 +9,27 @@
         <li Class="PatchOperationAdd">
           <xpath>/Defs/GeneDef[defName="LoS_SnekSnoot"]</xpath>
           <value>
-            <graphicData>
-              <graphicPath>Pawn/Head/LoS_SnekHead_thin</graphicPath>
-              <!-- <graphicPath>Pawn/Head/LoS_SnekHead_NoMouth</graphicPath> --> <!--Trust me it is off because it looked horribly cursed.-->
-              <layer>PostSkin</layer>
-              <colorType>Skin</colorType>
-              <useSkinShader>false</useSkinShader>
-              <drawLoc>HeadTop</drawLoc>
-              <drawOffset>(0, 0.03035328, 0)</drawOffset>
-              <drawIfFaceCovered>true</drawIfFaceCovered>
-            </graphicData>
+            <renderNodeProperties>
+              <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPaths>
+                  <li>Pawn/Head/LoS_SnekHead_thin</li>
+                </texPaths>
+                <useSkinShader>false</useSkinShader>
+                <colorType>Skin</colorType>
+                <drawData>
+                  <defaultData>
+                    <layer>52</layer>
+                  </defaultData>
+                </drawData>
+                <parentTagDef>Head</parentTagDef>
+              </li>
+            </renderNodeProperties>
           </value>
         </li>
       </operations>
     </match>
   </Operation>
-
 
 </Patch>

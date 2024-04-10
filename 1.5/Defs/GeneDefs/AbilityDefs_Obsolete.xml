@@ -1,0 +1,37 @@
+<Defs>
+  <!--Just kept around to avoid breaking saves due to abilities changing-->
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>BS_SnekEngulf</defName>
+    <label>swallow</label>
+    <description>Swallow a target smaller than yourself.</description>
+    <iconPath>Icons/BS_Swallow</iconPath>
+    <displayOrder>100</displayOrder>
+    <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
+    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+    <hostile>true</hostile>
+    <cooldownTicksRange>2000</cooldownTicksRange>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>3.5</warmupTime>
+      <targetParams>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetMechs>true</canTargetMechs>
+        <canTargetBloodfeeders>true</canTargetBloodfeeders>
+      </targetParams>
+    </verbProperties>
+    <aiCanUse>true</aiCanUse>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_AbilityEngluf">
+        <relativeSizeThreshold>0.85</relativeSizeThreshold>
+        <internalBaseDamage>6</internalBaseDamage>
+        <selfDamageMultiplier>1</selfDamageMultiplier>
+      </li>
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Eating</capacity>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

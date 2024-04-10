@@ -94,9 +94,9 @@
         <li Class="VFECore.ScenPart_ForcedFactionGoodwill" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
           <factionDef>LoS_ViperFamily</factionDef>
           <affectStartingGoodwill>True</affectStartingGoodwill>
-          <startingGoodwillRange>20~20</startingGoodwillRange>
+          <startingGoodwillRange>80~80</startingGoodwillRange>
           <affectNaturalGoodwill>True</affectNaturalGoodwill>
-          <naturalGoodwillRange>50~50</naturalGoodwillRange>
+          <naturalGoodwillRange>80~80</naturalGoodwillRange>
           <def>VFEC_ForcedFactionGoodwill</def>
         </li>
         <li Class="VFECore.ScenPart_ForcedFactionGoodwill" MayRequire="oskarpotocki.vanillafactionsexpanded.core">

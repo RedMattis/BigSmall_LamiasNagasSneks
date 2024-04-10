@@ -1,0 +1,15 @@
+<Patch>
+  <!-- <Operation Class="PatchOperationReplace">
+		<xpath>Defs/AbilityDef[defName="BS_SnekEngulf"]/verbProperties/soundCast</xpath>
+		<value>
+			<soundCast>Pawn_Devourer_Jump</soundCast>
+		</value>
+	</Operation> -->
+
+  <Operation Class="PatchOperationReplace">
+		<xpath>Defs/AbilityDef[defName="BS_SnekEngulf_New"]/verbProperties/soundLanding</xpath>
+		<value>
+			<soundLanding>Pawn_Devourer_Land</soundLanding>
+		</value>
+	</Operation>
+</Patch>

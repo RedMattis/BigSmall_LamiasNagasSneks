@@ -11,14 +11,14 @@
     <genes>
       <li>LoS_Snake_Tail</li>
 			<!-- <li>Ageless</li> -->
-			<li>BS_Incorporate</li>
+			<li>BS_IntegrateGenes</li>
       <li>Instability_Major</li>
 			<!-- <li>DiseaseFree</li> -->
+      <li>BS_Incorporate</li>
 			<li>TotalHealing</li>
 			<li>Gigantism</li>
 			<li>OgreFrame</li>
 			<li>BS_StickyAcidSpray</li>
-			<li>AG_GreaterAcidicVomit</li>
 			<li>AG_AcidicBlood</li>
 			<li>AG_BloodVomit</li>
 			<li>AG_FrailStomach</li>
