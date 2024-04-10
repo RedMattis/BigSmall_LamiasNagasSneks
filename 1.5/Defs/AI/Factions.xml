@@ -137,6 +137,8 @@
         <VRE_Lowmate MayRequire="vanillaracesexpanded.highmate">0.08</VRE_Lowmate>
         <!--Basically they would never let something like this out on a Rimworld. Too fragile and valuable.-->
         <BS_ElixirSlime MayRequire="RedMattis.BSSlimes">0.0001</BS_ElixirSlime>
+        <BS_Mimic MayRequire="RedMattis.MoreXenos">0.02</BS_Mimic>
+        <BS_Abomination MayRequire="RedMattis.MoreXenos">0.02</BS_Abomination>
       </xenotypeChances>
     </xenotypeSet>
     <raidCommonalityFromPointsCurve>
