@@ -37,6 +37,7 @@
 			<li>AptitudePoor_Construction</li>
 			<li>AptitudeTerrible_Plants</li>
 			<li>BS_SlowBleeding</li>
+			<li>BS_SlowAging</li>
 		</genes>
   </XenotypeDef>
 

@@ -62,6 +62,7 @@
     <warmupEffecter>Bloodfeed_Warmup</warmupEffecter>
     <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
     <hostile>true</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
     <verbProperties>
       <verbClass>Verb_CastAbilityTouch</verbClass>
       <drawAimPie>false</drawAimPie>

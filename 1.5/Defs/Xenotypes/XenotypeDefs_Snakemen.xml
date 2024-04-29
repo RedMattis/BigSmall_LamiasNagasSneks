@@ -43,6 +43,7 @@
 			<li>AptitudeTerrible_Artistic</li>
 			<li>AptitudeTerrible_Social</li>
 			<li>BS_SlowBleeding</li>
+			<li>BS_FastAging</li>
     </genes>
   </XenotypeDef>
   
@@ -174,6 +175,7 @@
       <li>Aggression_DeadCalm</li>
       <li>BS_ToughSkin</li>
 			<li>BS_SlowBleeding</li>
+			<li>BS_SlowAging</li>
     </genes>
   </XenotypeDef>
 
