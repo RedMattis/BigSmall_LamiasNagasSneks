@@ -281,13 +281,13 @@
     <iconPath>Icons/BS_Swallow</iconPath>
     <displayOrder>100</displayOrder>
     <hostile>true</hostile>
-    <cooldownTicksRange>2000</cooldownTicksRange>
+    <cooldownTicksRange>1200</cooldownTicksRange>
     <jobDef>CastJump</jobDef>
     <verbProperties>
       <verbClass>BigAndSmall.Verb_CastAbilityJumpON</verbClass>
       <label>Uh-oh</label>
       <drawAimPie>true</drawAimPie>
-      <range>7.9</range>
+      <range>8.9</range>
       <warmupTime>3.5</warmupTime>
       <soundCast>Longjump_Jump</soundCast>
       <soundLanding>Longjump_Land</soundLanding>
