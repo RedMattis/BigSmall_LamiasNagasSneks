@@ -104,9 +104,9 @@
   
   <FactionDef ParentName="OutlanderRoughBase">
     <defName>LoS_ViperFamily</defName>
-    <label>Viper Family</label>
+    <label>VIPER</label>
     <fixedName>Viper Family</fixedName>
-    <description>one of many branches of an influential urbworld criminal family.</description>
+    <description>believed to be one of many branches of very old influential urbworld criminal family.</description>
     <factionIconPath>Icons/LoS_Viper_Faction_Icon</factionIconPath>
     <pawnSingular>viper</pawnSingular>
     <pawnsPlural>vipers</pawnsPlural>

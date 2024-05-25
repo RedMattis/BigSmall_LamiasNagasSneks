@@ -12,6 +12,7 @@
     <genes>
       <li>BS_HeatGenerator</li>
 			<li>Ageless</li>
+			<li>BS_TrulyAgeless</li>
 			<!-- <li>Deathless</li> -->
 			<li>DiseaseFree</li>
 			<li>PerfectImmunity</li>
