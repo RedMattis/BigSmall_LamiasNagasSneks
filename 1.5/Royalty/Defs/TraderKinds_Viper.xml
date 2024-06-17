@@ -9,7 +9,7 @@
       <!-- Resources -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>Silver</thingDef>
-        <countRange>750~1200</countRange>
+        <countRange>750~1600</countRange>
       </li>
       <li Class="StockGenerator_Category">
         <categoryDef>ResourcesRaw</categoryDef>
@@ -131,11 +131,61 @@
         <countRange>1~2</countRange>
       </li>
 
+      <!-- Shards -->
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Shard</thingDef>
+        <countRange>-1~4</countRange> <!-- 50% chance for 1~2 -->
+      </li>
+
+      <!-- Psytrainers -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>NeurotrainersPsycast</categoryDef>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+
       <!-- Buying -->
       <li Class="StockGenerator_BuyExpensiveSimple" />
-      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
-      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
-      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>Art</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>MusicalInstrument</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>PsylinkNeuroformer</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>AnimalInsect</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>AnimalExotic</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>ImplantEmpireCommon</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>ImplantEmpireRoyal</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>UtilitySpecial</tag>
+      </li>
+
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+        <thingDef>Shell_Deadlife</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+        <thingDef>VoidSculpture</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+        <thingDef>Shard</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+        <thingDef>Bioferrite</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+        <thingDef>RevenantSpine</thingDef>
+      </li>
 
     </stockGenerators>
   </TraderKindDef>
@@ -147,7 +197,7 @@
       <!-- Resources -->
       <li Class="StockGenerator_SingleDef">
         <thingDef>Silver</thingDef>
-        <countRange>500~5000</countRange>
+        <countRange>3000~12000</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentIndustrial</thingDef>
@@ -213,7 +263,9 @@
       </li>
       <li Class="StockGenerator_Category">
         <categoryDef>FoodRaw</categoryDef>
-        <excludedCategories><li>EggsFertilized</li></excludedCategories>
+        <excludedCategories>
+          <li>EggsFertilized</li>
+        </excludedCategories>
         <thingDefCountRange>2~4</thingDefCountRange>
         <totalPriceRange>400~800</totalPriceRange>
       </li>
@@ -226,8 +278,8 @@
       <!-- Drugs -->
       <li Class="StockGenerator_Category">
         <categoryDef>Drugs</categoryDef>
-        <thingDefCountRange>3~4</thingDefCountRange>
-        <totalPriceRange>700~1500</totalPriceRange>
+        <thingDefCountRange>3~8</thingDefCountRange>
+        <totalPriceRange>700~3000</totalPriceRange>
       </li>
 
       <!-- Techprints -->
@@ -238,11 +290,26 @@
             <chance>0.5</chance>
           </li>
           <li>
-            <count>3</count>
+            <count>5</count>
             <chance>0.5</chance>
           </li>
         </countChances>
       </li>
+
+      <!-- Books -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>Books</categoryDef>
+        <excludedThingDefs>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Tome</li> <!-- only available in Anomaly, handled seperately -->
+        </excludedThingDefs>
+        <thingDefCountRange>2</thingDefCountRange>
+        <countRange>-2~1</countRange>
+      </li>
+
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_Tomes">
+        <countRange>-2~1</countRange>
+      </li>
+
 
       <!-- Weapons -->
       <li Class="StockGenerator_MarketValue">
@@ -370,6 +437,12 @@
       <!-- Archite capsules -->
       <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
         <thingDef>ArchiteCapsule</thingDef>
+        <countRange>0~6</countRange>
+      </li>
+
+      <!-- Shards -->
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Shard</thingDef>
         <countRange>-1~4</countRange> <!-- 50% chance for 1~2 -->
       </li>
 
@@ -381,11 +454,46 @@
 
       <!-- Buying -->
       <li Class="StockGenerator_BuyExpensiveSimple" />
-      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
-      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
-      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
-      <li Class="StockGenerator_BuyTradeTag"><tag>AnimalInsect</tag></li>
-      <li Class="StockGenerator_BuyTradeTag"><tag>AnimalExotic</tag></li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>Art</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>MusicalInstrument</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>PsylinkNeuroformer</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>AnimalInsect</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>AnimalExotic</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>ImplantEmpireCommon</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>ImplantEmpireRoyal</tag>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>UtilitySpecial</tag>
+      </li>
+
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+        <thingDef>Shell_Deadlife</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+        <thingDef>VoidSculpture</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+        <thingDef>Shard</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+        <thingDef>Bioferrite</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef" MayRequire="Ludeon.RimWorld.Anomaly">
+        <thingDef>RevenantSpine</thingDef>
+      </li>
 
 
     </stockGenerators>

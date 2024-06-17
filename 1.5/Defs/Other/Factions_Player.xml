@@ -2,7 +2,7 @@
 
   <FactionDef ParentName="PlayerFactionBase">
     <defName>LoS_ViperPlayerColony</defName>
-    <label>Viper Expidition</label>
+    <label>Viper Expedition</label>
     <description>A colony of recently-arrived off-worlders.</description>
     <isPlayer>true</isPlayer>
     <basicMemberKind>Colonist</basicMemberKind>
@@ -68,7 +68,8 @@
             </eventsToSwapPawnKind>
             <pawnKindSet>
               <LoS_ViperWanderer>1</LoS_ViperWanderer>
-              <SpaceRefugee>3</SpaceRefugee>
+              <BS_SpaceRefugeeXenoPlus>2</BS_SpaceRefugeeXenoPlus>
+              <SpaceRefugee>2</SpaceRefugee>
             </pawnKindSet>
           </li>
         </pawnKindSwaps>
