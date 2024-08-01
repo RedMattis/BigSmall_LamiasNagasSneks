@@ -27,6 +27,7 @@
 	</Operation>
   
   <Operation Class="PatchOperationAdd">
+		<success>Always</success>
     <xpath>*/ThoughtDef[defName="GroinUncovered_Disapproved_Male"]/nullifyingGenes</xpath>
     <value>
       <li>LoS_Snake_Tail</li>
@@ -37,6 +38,7 @@
   </Operation>
   
   <Operation Class="PatchOperationAdd">
+		<success>Always</success>
     <xpath>*/ThoughtDef[defName="GroinUncovered_Disapproved_Social_Male"]/nullifyingGenes</xpath>
     <value>
       <li>LoS_Snake_Tail</li>
