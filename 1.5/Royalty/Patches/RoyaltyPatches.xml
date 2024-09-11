@@ -114,6 +114,7 @@
             <Mech_Scyther>3</Mech_Scyther>
             <Mech_Lancer>2</Mech_Lancer>
             <Mech_CentipedeBlaster>2</Mech_CentipedeBlaster>
+            <Mech_CentipedeGunner>0.5</Mech_CentipedeGunner>
             <Mech_Centurion MayRequire="Ludeon.RimWorld.Biotech">2</Mech_Centurion>
             <Mech_Warqueen MayRequire="Ludeon.RimWorld.Biotech">1</Mech_Warqueen>
             <Mech_Apocriton MayRequire="Ludeon.RimWorld.Biotech">1</Mech_Apocriton>
@@ -130,8 +131,30 @@
             <LoS_Viper_Elite>5</LoS_Viper_Elite>
             <LoS_Viper_Assassin>5</LoS_Viper_Assassin>
             <Megaspider>10</Megaspider>
+            <VFEI2_Ironclad MayRequire="OskarPotocki.VFE.Insectoid2">1</VFEI2_Ironclad>
+            <VFEI2_Venomite MayRequire="OskarPotocki.VFE.Insectoid2">5</VFEI2_Venomite>
           </options>
         </li>
+
+        <li>
+          <!-- Heavy fights -->
+          <kindDef>Combat</kindDef>
+          <commonality>30</commonality>
+          <options>
+            <LoS_Viper_Elite>6</LoS_Viper_Elite>
+            <LoS_Viper_Assassin>3</LoS_Viper_Assassin>
+            <Mech_Scyther>2</Mech_Scyther>
+            <Mech_Lancer>2</Mech_Lancer>
+            <Mech_CentipedeBlaster>5</Mech_CentipedeBlaster>
+            <Mech_CentipedeGunner>5</Mech_CentipedeGunner>
+            <Mech_Centurion MayRequire="Ludeon.RimWorld.Biotech">2</Mech_Centurion>
+            <Mech_Warqueen MayRequire="Ludeon.RimWorld.Biotech">1</Mech_Warqueen>
+            <VFEI2_Ironclad MayRequire="OskarPotocki.VFE.Insectoid2">10</VFEI2_Ironclad>
+            <VFEI2_Venomite MayRequire="OskarPotocki.VFE.Insectoid2">5</VFEI2_Venomite>
+            <Mech_Termite_Breach>1</Mech_Termite_Breach>
+          </options>
+        </li>
+
         <li>
           <!-- breach fights -->
           <kindDef>Combat</kindDef>
@@ -157,6 +180,7 @@
             <LoS_Viper_TechElite>1.5</LoS_Viper_TechElite>
             <LoS_Viper_Assassin>2</LoS_Viper_Assassin>
             <Mech_Termite_Breach>1</Mech_Termite_Breach>
+            <VFEI2_Ironclad MayRequire="OskarPotocki.VFE.Insectoid2">1</VFEI2_Ironclad>
             <Mech_Scyther>1</Mech_Scyther>
             <LoS_ViperBiomech>0.1</LoS_ViperBiomech>
             <LoS_ViperBiomechMelee>0.1</LoS_ViperBiomechMelee>
@@ -171,6 +195,7 @@
             <LoS_Viper_Elite>2</LoS_Viper_Elite>
             <LoS_Viper_TechElite>2</LoS_Viper_TechElite>
             <LoS_Viper_Assassin>2</LoS_Viper_Assassin>
+            <Mech_Scyther>0.5</Mech_Scyther>
           </options>
         </li>
         <li>
@@ -181,6 +206,7 @@
             <LoS_Viper_Elite>2</LoS_Viper_Elite>
             <LoS_Viper_TechElite>1.5</LoS_Viper_TechElite>
             <LoS_Viper_Assassin>3</LoS_Viper_Assassin>
+            <Mech_Scyther>2</Mech_Scyther>
           </options>
         </li>
         <li MayRequire="Ludeon.RimWorld.Ideology">

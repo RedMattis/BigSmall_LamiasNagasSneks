@@ -139,6 +139,7 @@
         <BS_ElixirSlime MayRequire="RedMattis.BSSlimes">0.0001</BS_ElixirSlime>
         <BS_Mimic MayRequire="RedMattis.MoreXenos">0.02</BS_Mimic>
         <BS_Abomination MayRequire="RedMattis.MoreXenos">0.02</BS_Abomination>
+        <BS_Broodmother MayRequire="RedMattis.MoreXenos">0.02</BS_Broodmother>
       </xenotypeChances>
     </xenotypeSet>
     <raidCommonalityFromPointsCurve>
@@ -185,6 +186,21 @@
           <Mech_Militor MayRequire="Ludeon.RimWorld.Biotech">20</Mech_Militor>
           <Mech_Centurion MayRequire="Ludeon.RimWorld.Biotech">2</Mech_Centurion>
           <Mech_Warqueen MayRequire="Ludeon.RimWorld.Biotech">1</Mech_Warqueen>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <Villager>5</Villager>
+          <Town_Guard>10</Town_Guard>
+          <Grenadier_Destructive>1.5</Grenadier_Destructive>
+          <Mercenary_Slasher>10</Mercenary_Slasher>
+          <Mercenary_Gunner>10</Mercenary_Gunner>
+          <Mercenary_Elite>10</Mercenary_Elite>
+          <Town_Councilman>10</Town_Councilman>
+          <Mech_Scyther>5</Mech_Scyther>
+          <VFEI2_Ironclad MayRequire="OskarPotocki.VFE.Insectoid2">1</VFEI2_Ironclad>
+          <VFEI2_Venomite MayRequire="OskarPotocki.VFE.Insectoid2">5</VFEI2_Venomite>
         </options>
       </li>
       <li>

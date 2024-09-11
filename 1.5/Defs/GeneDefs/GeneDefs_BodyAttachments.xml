@@ -52,10 +52,7 @@
       </suffixSymbols>
     </symbolPack>
     <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
+
       <li Class="BetterPrerequisites.GeneExtension">
         <facialDisabler/>
       </li>

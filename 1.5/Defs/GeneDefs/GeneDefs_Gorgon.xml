@@ -28,11 +28,7 @@
     </symbolPack>
     <selectionWeight>1</selectionWeight>
     <modExtensions>
-			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-        <backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
-			</li>
+			
 		</modExtensions>
   </GeneDef>
   <GeneDef>
@@ -60,12 +56,7 @@
       </suffixSymbols>
     </symbolPack>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
   </GeneDef>
   <GeneDef ParentName="GeneHairStyleBase">
     <defName>BS_GorgonHair</defName>
@@ -86,12 +77,7 @@
         <li>BS_GorgonHaired</li>
       </tags>
     </hairTagFilter>
-    <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
-        <backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
-        <backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
-      </li>
-    </modExtensions>
+
     <renderNodeProperties Inherit="False">
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>

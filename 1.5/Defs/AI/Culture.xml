@@ -19,11 +19,7 @@
     <thingStyleCategories>
       <li MayRequire="rimsenal.Urb">
         <category>RSUrb</category>
-        <priority>2</priority>
-      </li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">
-        <category>Spikecore</category>
-        <priority>2</priority>
+        <priority>99</priority>
       </li>
     </thingStyleCategories>
     <styleItemTags>
