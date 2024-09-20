@@ -13,7 +13,5 @@
     <li IfModActive="ludeon.rimworld.anomaly">1.5/Anomaly</li>
     <li IfModActive="Ludeon.Rimworld.Royalty">1.5/Royalty</li>
     <li IfModActive="sarg.alphagenes">1.5/AlphaGenes</li>
-    <li IfModActive="erdelf.HumanoidAlienRaces">1.5/HAR</li>
-    <li IfModNotActive="erdelf.HumanoidAlienRaces">1.5/No_HAR</li>
   </v1.5>
 </loadFolders>

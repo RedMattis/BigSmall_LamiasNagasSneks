@@ -47,7 +47,7 @@
     </exclusionTags>
     <modExtensions>
 			<li Class="BetterPrerequisites.GeneExtension">
-				<hideInXenotypeUI>true</hideInXenotypeUI>
+				<hideInGenePicker>true</hideInGenePicker>
 			</li>
 		</modExtensions>
   </GeneDef>
@@ -82,7 +82,7 @@
     <selectionWeight>0</selectionWeight>
     <modExtensions>
 			<li Class="BetterPrerequisites.GeneExtension">
-				<hideInXenotypeUI>true</hideInXenotypeUI>
+				<hideInGenePicker>true</hideInGenePicker>
 			</li>
 		</modExtensions>
   </GeneDef>
@@ -105,7 +105,7 @@
     <selectionWeight>0</selectionWeight>
     <modExtensions>
 			<li Class="BetterPrerequisites.GeneExtension">
-				<hideInXenotypeUI>true</hideInXenotypeUI>
+				<hideInGenePicker>true</hideInGenePicker>
 			</li>
 		</modExtensions>
   </GeneDef>
