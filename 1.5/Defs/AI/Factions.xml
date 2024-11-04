@@ -106,7 +106,7 @@
     <defName>LoS_ViperFamily</defName>
     <label>VIPER</label>
     <fixedName>Viper Family</fixedName>
-    <description>believed to be one of many branches of very old influential urbworld criminal family.</description>
+    <description>Believed to be one of many branches of very old influential urbworld criminal family. They are rarely seen and are believed to possess little power or influence compared to more formidable groups such as the various pirate Wasters or old tribes.</description>
     <factionIconPath>Icons/LoS_Viper_Faction_Icon</factionIconPath>
     <pawnSingular>viper</pawnSingular>
     <pawnsPlural>vipers</pawnsPlural>
