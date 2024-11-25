@@ -2,8 +2,9 @@
   <PawnKindDef ParentName="LoS_Viper_Elite">
     <label>VIPER Biomecha</label>
     <defName>LoS_ViperBiomech</defName>
+    <race>BS_UrbMech</race>
     <initialResistanceRange>10~23</initialResistanceRange>
-    <combatPower>300</combatPower>
+    <combatPower>350</combatPower>
     <weaponMoney>1800~5400</weaponMoney>
     <minGenerationAge>20</minGenerationAge>
     <maxGenerationAge>25</maxGenerationAge>
@@ -43,8 +44,9 @@
   <PawnKindDef ParentName="LoS_Viper_Elite">
     <label>VIPER Biomecha</label>
     <defName>LoS_ViperBiomechMelee</defName>
+    <race>BS_UrbMech</race>
     <initialResistanceRange>10~23</initialResistanceRange>
-    <combatPower>300</combatPower>
+    <combatPower>350</combatPower>
     <weaponMoney>1800~5400</weaponMoney>
     <minGenerationAge>20</minGenerationAge>
     <maxGenerationAge>25</maxGenerationAge>

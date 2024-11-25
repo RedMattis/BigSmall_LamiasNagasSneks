@@ -61,6 +61,26 @@
       <li>RangedLight</li>
     </forbiddenWeaponClasses>
     <factionlessGenerationWeight>0.0</factionlessGenerationWeight>
+		<modExtensions>
+			<li Class="BetterPrerequisites.XenotypeExtension">
+				<setRace>BS_UrbMech</setRace>
+				<forceRace>true</forceRace>
+			</li>
+			<li Class="BigAndSmall.PilotExtension">
+        <xenotypeChances>
+          <Hussar>0.20</Hussar>
+          <LoS_Lamia>0.30</LoS_Lamia>
+          <LoS_Siren>0.05</LoS_Siren>
+          <LoS_TrueLamia>0.025</LoS_TrueLamia>
+          <BS_PinkSlime MayRequire="RedMattis.BSSlimes">0.05</BS_PinkSlime>
+          <VRE_Lowmate MayRequire="vanillaracesexpanded.highmate">0.08</VRE_Lowmate>
+          <BS_ElixirSlime MayRequire="RedMattis.BSSlimes">0.05</BS_ElixirSlime>
+        </xenotypeChances>
+        <pilotPawnkind>
+          <li>LoS_Viper_TechElite</li>
+        </pilotPawnkind>
+      </li>
+		</modExtensions>
   </XenotypeDef>
 
 </Defs>

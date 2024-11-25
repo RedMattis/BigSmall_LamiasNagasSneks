@@ -40,7 +40,6 @@
 			<li>AptitudeTerrible_Animals</li>
 			<li>AptitudeStrong_Social</li>
 			<li>Hair_LongOnly</li>
-			<li>Hair_BaldOnly</li>
 			<li MayRequire="vanillaracesexpanded.highmate">VRE_HighmateHair</li>
     </genes>
   </XenotypeDef>
