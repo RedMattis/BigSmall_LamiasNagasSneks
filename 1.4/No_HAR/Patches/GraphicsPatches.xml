@@ -10,7 +10,7 @@
           <xpath>/Defs/GeneDef[defName="LoS_SnekSnoot"]</xpath>
           <value>
             <graphicData>
-              <graphicPath>Pawn/Head/LoS_SnekHead_thin</graphicPath>
+              <graphicPath>BS_Heads/Snake/snakehead</graphicPath>
               <!-- <graphicPath>Pawn/Head/LoS_SnekHead_NoMouth</graphicPath> --> <!--Trust me it is off because it looked horribly cursed.-->
               <layer>PostSkin</layer>
               <colorType>Skin</colorType>

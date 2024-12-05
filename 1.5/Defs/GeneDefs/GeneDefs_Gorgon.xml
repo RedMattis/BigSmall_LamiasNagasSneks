@@ -27,9 +27,7 @@
       </suffixSymbols>
     </symbolPack>
     <selectionWeight>1</selectionWeight>
-    <modExtensions>
-			
-		</modExtensions>
+
   </GeneDef>
   <GeneDef>
     <defName>BS_GorgonPetrifyCloseRange</defName>

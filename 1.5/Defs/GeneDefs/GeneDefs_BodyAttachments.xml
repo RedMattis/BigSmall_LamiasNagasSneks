@@ -15,7 +15,7 @@
       <EatingSpeed>0.5</EatingSpeed>
     </statOffsets>
     <statFactors>
-      <SM_HeadSize_Cosmetic>0.9</SM_HeadSize_Cosmetic>
+      <SM_HeadSize_Cosmetic>0.92</SM_HeadSize_Cosmetic>
     </statFactors>
     <biostatCpx>1</biostatCpx>
     <biostatMet>-1</biostatMet>
@@ -52,15 +52,26 @@
       </suffixSymbols>
     </symbolPack>
     <modExtensions>
-
-      <li Class="BetterPrerequisites.GeneExtension">
-        <facialDisabler/>
+      <li Class="BigAndSmall.PawnExtension">
+        
+        <facialDisabler />
+        <headDrawData>
+          <dataSouth>
+            <offset>(0.0, 0, -0.05)</offset>
+          </dataSouth>
+          <dataEast>
+            <offset>(0.15, 0, -0.1)</offset>
+          </dataEast>
+          <dataWest>
+            <offset>(-0.15, 0, -0.1)</offset>
+          </dataWest>
+        </headDrawData>
       </li>
     </modExtensions>
   </GeneDef>
   <HeadTypeDef ParentName="AverageBase">
     <defName>LoS_SnekHead</defName>
-    <graphicPath>Pawn/Head/LoS_SnekHead_thin</graphicPath>
+    <graphicPath>BS_Heads/Snake/snakehead</graphicPath>
     <randomChosen>false</randomChosen>
     <gender>None</gender>
     <selectionWeight>999999</selectionWeight>
