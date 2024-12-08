@@ -6,7 +6,7 @@
     <descriptionShort>immense pilotable semi-organic robot.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
     <inheritable>true</inheritable>
-    <nameMaker>BS_NamerRobot</nameMaker>
+    <nameMaker>BS_NamerRobotUltra</nameMaker>
     <combatPowerFactor>3.5</combatPowerFactor>
     <chanceToUseNameMaker>1.0</chanceToUseNameMaker>
     <genes>

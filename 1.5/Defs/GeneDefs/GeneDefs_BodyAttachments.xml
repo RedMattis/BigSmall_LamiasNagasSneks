@@ -53,7 +53,7 @@
     </symbolPack>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
-        
+        <bodyConstantHeadScale>true</bodyConstantHeadScale>
         <facialDisabler />
         <headDrawData>
           <dataSouth>
