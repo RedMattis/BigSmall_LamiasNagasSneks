@@ -156,7 +156,6 @@
               <li>LoS_Snake_Tail_HairClr</li>
               <li>LoS_Serpent_Tail</li>
               <li>LoS_MarlithBody</li>
-              <li>LoS_Snake_Tail_NoFacialAnim</li>
             </prerequisites>
           </li>
         </prerequisiteSets>
@@ -261,7 +260,6 @@
               <li>LoS_Snake_Tail_HairClr</li>
               <li>LoS_Serpent_Tail</li>
               <li>LoS_MarlithBody</li>
-              <li>LoS_Snake_Tail_NoFacialAnim</li>
             </prerequisites>
           </li>
         </prerequisiteSets>

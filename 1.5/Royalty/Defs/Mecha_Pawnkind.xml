@@ -23,6 +23,7 @@
       <li>NuclearStomach</li>
       <li>StoneskinGland</li>
     </techHediffsRequired>
+    <maxPerGroup>3</maxPerGroup>
     <modExtensions>
       <li Class="BigAndSmall.PilotExtension">
         <xenotypeChances>
@@ -35,7 +36,7 @@
           <BS_ElixirSlime MayRequire="RedMattis.BSSlimes">0.05</BS_ElixirSlime>
         </xenotypeChances>
         <pilotPawnkind>
-          <li>LoS_Viper_TechElite</li>
+          <li MayRequire="Ludeon.Rimworld.Royalty">LoS_Viper_TechElite</li>
         </pilotPawnkind>
       </li>
     </modExtensions>
@@ -67,6 +68,7 @@
       <li>NuclearStomach</li>
       <li>StoneskinGland</li>
     </techHediffsRequired>
+    <maxPerGroup>2</maxPerGroup>
     <modExtensions>
       <li Class="BigAndSmall.PilotExtension">
         <xenotypeChances>

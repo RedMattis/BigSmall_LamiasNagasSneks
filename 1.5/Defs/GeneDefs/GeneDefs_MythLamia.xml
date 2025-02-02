@@ -46,7 +46,7 @@
       <li>HemogenDrain</li>
     </exclusionTags>
     <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<hideInGenePicker>true</hideInGenePicker>
 			</li>
 		</modExtensions>
@@ -81,7 +81,7 @@
     </symbolPack>
     <selectionWeight>0</selectionWeight>
     <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<hideInGenePicker>true</hideInGenePicker>
 			</li>
 		</modExtensions>
@@ -104,7 +104,7 @@
     <biostatMet>-1</biostatMet>
     <selectionWeight>0</selectionWeight>
     <modExtensions>
-			<li Class="BetterPrerequisites.GeneExtension">
+			<li Class="BigAndSmall.PawnExtension">
 				<hideInGenePicker>true</hideInGenePicker>
 			</li>
 		</modExtensions>
