@@ -19,6 +19,13 @@
       <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
     </disallowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator_Preferred</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">NeuralSupercharge_Preferred</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AgeReversal_Demanded</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+    </disallowedPrecepts>
     <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
     <configurationListOrderPriority>31</configurationListOrderPriority>
     <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
@@ -115,6 +122,10 @@
     <naturalEnemy>true</naturalEnemy>
     <techLevel>Ultra</techLevel>
     <allowedCultures Inherit="False"><li>LoS_Urbworld</li></allowedCultures>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+    </disallowedPrecepts>
     <colorSpectrum Inherit="False">
       <li>(0.50, 0.10, 0.80)</li>
       <!-- <li>(1, 0.74, 0.83)</li> -->

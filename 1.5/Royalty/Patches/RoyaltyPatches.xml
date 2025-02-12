@@ -10,7 +10,7 @@
     <xpath>Defs/FactionDef[defName="LoS_ViperFamily"]/visitorTraderKinds</xpath>
     <value>
       <visitorTraderKinds>
-        <li>Viper_Base_Standard</li>
+        <li>Viper_Caravan_TraderGeneral</li>
       </visitorTraderKinds>
     </value>
   </Operation>
@@ -18,8 +18,8 @@
   <Operation Class="PatchOperationReplace">
     <xpath>Defs/FactionDef[defName="LoS_ViperFamily"]/baseTraderKinds</xpath>
     <value>
-      <baseTraderKinds>
-        <li>Viper_Caravan_TraderGeneral</li>
+      <baseTraderKinds Inherit="False">
+        <li>Viper_Base_Standard</li>
       </baseTraderKinds>
     </value>
   </Operation>
