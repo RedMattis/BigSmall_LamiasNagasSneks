@@ -56,7 +56,7 @@
         <bodyConstantHeadScale>true</bodyConstantHeadScale>
         <!-- <preventHeadScalingFactor>1.0</preventHeadScalingFactor>
         <preventHeadOffsetFactor>1.0</preventHeadOffsetFactor> -->
-        <facialDisabler />
+        <disableFacialAnimations>true</disableFacialAnimations>
         <headDrawData>
           <dataSouth>
             <offset>(0.0, 0, -0.05)</offset>
