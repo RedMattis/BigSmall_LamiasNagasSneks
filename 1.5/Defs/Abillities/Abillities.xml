@@ -78,7 +78,7 @@
     <comps>
       <li Class="BigAndSmall.CompProperties_AbilityLamiaFeast">
         <!--How large the target can be compared to the lamia. 0.25 means max 25% of body size-->
-        <relativeSizeThreshold>0.35~1.0</relativeSizeThreshold>
+        <relativeSizeThreshold>0.35~0.9</relativeSizeThreshold>
         <!--How much of a mess is made-->
         <bloodFilthToSpawn>2</bloodFilthToSpawn>
         <maxHungerPercentThreshold>1.00</maxHungerPercentThreshold>
