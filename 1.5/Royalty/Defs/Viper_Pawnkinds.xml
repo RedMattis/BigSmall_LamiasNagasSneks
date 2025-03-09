@@ -34,7 +34,7 @@
     <techHediffsChance>0.3</techHediffsChance>
     <techHediffsMoney>1000~1500</techHediffsMoney>
     <techHediffsRequired>
-      <li>DeathAcidifier</li>
+      <li MayRequire="Ludeon.Rimworld.Royalty">DeathAcidifier</li>
     </techHediffsRequired>
     <biocodeWeaponChance>0.75</biocodeWeaponChance>
     <disallowedTraits>
@@ -224,7 +224,6 @@
     <xenotypeSet>
       <xenotypeChances>
         <LoS_Lamia>0.60</LoS_Lamia>
-        <LoS_TrueLamia>0.025</LoS_TrueLamia>
         <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.25</Hussar>
         <!-- <Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie> -->
         <VRE_Lowmate MayRequire="vanillaracesexpanded.highmate">0.20</VRE_Lowmate>

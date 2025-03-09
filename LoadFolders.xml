@@ -12,6 +12,7 @@
     <li>1.5</li>
     <li IfModActive="ludeon.rimworld.anomaly">1.5/Anomaly</li>
     <li IfModActive="Ludeon.Rimworld.Royalty">1.5/Royalty</li>
-    <li IfModActive="sarg.alphagenes">1.5/AlphaGenes</li>
+    <li IfModActive="sarg.alphagenes">1.5/Mods/AlphaGenes</li>
+    <li IfModActive="Aoba.DeadManSwitch.MobileDragoon">1.5/Mods/MobileDragoon</li>
   </v1.5>
 </loadFolders>

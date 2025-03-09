@@ -137,20 +137,21 @@
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <Hussar>0.20</Hussar>
-        <Neanderthal>0.05</Neanderthal>
         <LoS_Lamia>0.30</LoS_Lamia>
         <LoS_Siren>0.05</LoS_Siren>
+        <Neanderthal>0.05</Neanderthal>
         <BS_Weaver MayRequire="RedMattis.MoreXenos">0.020</BS_Weaver>
         <BS_Devilspider MayRequire="RedMattis.MoreXenos">0.020</BS_Devilspider>
-        <LoS_TrueLamia>0.0101</LoS_TrueLamia>
         <LoS_Gorgon>0.01</LoS_Gorgon>
         <BS_PinkSlime MayRequire="RedMattis.BSSlimes">0.01</BS_PinkSlime>
         <VRE_Lowmate MayRequire="vanillaracesexpanded.highmate">0.08</VRE_Lowmate>
-        <!--Basically they would never let something like this out on a Rimworld. Too fragile and valuable.-->
-        <BS_ElixirSlime MayRequire="RedMattis.BSSlimes">0.0001</BS_ElixirSlime>
         <BS_Mimic MayRequire="RedMattis.MoreXenos">0.02</BS_Mimic>
         <BS_Abomination MayRequire="RedMattis.MoreXenos">0.02</BS_Abomination>
         <BS_Broodmother MayRequire="RedMattis.MoreXenos">0.02</BS_Broodmother>
+        
+        <!--Basically they would never let something like this out on a Rimworld. Too fragile and valuable.-->
+        <BS_ElixirSlime MayRequire="RedMattis.BSSlimes">0.0001</BS_ElixirSlime>
+        
       </xenotypeChances>
     </xenotypeSet>
     <raidCommonalityFromPointsCurve>

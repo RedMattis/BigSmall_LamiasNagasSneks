@@ -85,6 +85,8 @@
             <Mech_Scyther>1</Mech_Scyther>
             <LoS_ViperBiomech>0.1</LoS_ViperBiomech>
             <LoS_ViperBiomechMelee>0.1</LoS_ViperBiomechMelee>
+            <BS_Viper_MeleeDragoon MayRequire="Aoba.DeadManSwitch.MobileDragoon">0.1</BS_Viper_MeleeDragoon>
+            <BS_Viper_RangedDragoon MayRequire="Aoba.DeadManSwitch.MobileDragoon">0.1</BS_Viper_RangedDragoon>
           </options>
         </li>
 
@@ -152,6 +154,7 @@
             <VFEI2_Ironclad MayRequire="OskarPotocki.VFE.Insectoid2">10</VFEI2_Ironclad>
             <VFEI2_Venomite MayRequire="OskarPotocki.VFE.Insectoid2">5</VFEI2_Venomite>
             <Mech_Termite_Breach>1</Mech_Termite_Breach>
+            <BS_Viper_RangedDragoon MayRequire="Aoba.DeadManSwitch.MobileDragoon">0.1</BS_Viper_RangedDragoon>
           </options>
         </li>
 
@@ -184,6 +187,8 @@
             <Mech_Scyther>1</Mech_Scyther>
             <LoS_ViperBiomech>0.1</LoS_ViperBiomech>
             <LoS_ViperBiomechMelee>0.1</LoS_ViperBiomechMelee>
+            <BS_Viper_MeleeDragoon MayRequire="Aoba.DeadManSwitch.MobileDragoon">0.1</BS_Viper_MeleeDragoon>
+            <BS_Viper_RangedDragoon MayRequire="Aoba.DeadManSwitch.MobileDragoon">0.1</BS_Viper_RangedDragoon>
           </options>
         </li>
         <li>
@@ -207,6 +212,8 @@
             <LoS_Viper_TechElite>1.5</LoS_Viper_TechElite>
             <LoS_Viper_Assassin>3</LoS_Viper_Assassin>
             <Mech_Scyther>2</Mech_Scyther>
+            <BS_Viper_MeleeDragoon MayRequire="Aoba.DeadManSwitch.MobileDragoon">0.2</BS_Viper_MeleeDragoon>
+            <BS_Viper_RangedDragoon MayRequire="Aoba.DeadManSwitch.MobileDragoon">0.2</BS_Viper_RangedDragoon>
           </options>
         </li>
         <li MayRequire="Ludeon.RimWorld.Ideology">
