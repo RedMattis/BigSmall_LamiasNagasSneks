@@ -57,7 +57,7 @@
             <Town_Councilman>2</Town_Councilman>
             <Mech_Scyther>1</Mech_Scyther>
             <Mech_Militor MayRequire="Ludeon.RimWorld.Biotech">2</Mech_Militor>
-
+            <BS_GiantRobotRanged_One MayRequire="RedMattis.BigSmall.SimpleAndroids">1</BS_GiantRobotRanged_One>
           </guards>
         </li>
         <li>
@@ -76,7 +76,7 @@
         <li>
           <!-- Normal fights -->
           <kindDef>Combat</kindDef>
-          <commonality>40</commonality>
+          <commonality>20</commonality>
           <options>
             <LoS_Viper_Trooper>5</LoS_Viper_Trooper>
             <LoS_Viper_Elite>3.5</LoS_Viper_Elite>
@@ -85,8 +85,25 @@
             <Mech_Scyther>1</Mech_Scyther>
             <LoS_ViperBiomech>0.1</LoS_ViperBiomech>
             <LoS_ViperBiomechMelee>0.1</LoS_ViperBiomechMelee>
-            <BS_Viper_MeleeDragoon MayRequire="Aoba.DeadManSwitch.MobileDragoon">0.1</BS_Viper_MeleeDragoon>
-            <BS_Viper_RangedDragoon MayRequire="Aoba.DeadManSwitch.MobileDragoon">0.1</BS_Viper_RangedDragoon>
+            <BS_Viper_MeleeDragoon MayRequire="Aoba.DeadManSwitch.MobileDragoon">0.5</BS_Viper_MeleeDragoon>
+            <BS_Viper_RangedDragoon MayRequire="Aoba.DeadManSwitch.MobileDragoon">0.5</BS_Viper_RangedDragoon>
+          </options>
+        </li>
+
+        <li>
+          <!-- Normal fights -->
+          <kindDef>Combat</kindDef>
+          <commonality>20</commonality>
+          <options>
+            <LoS_Viper_Trooper>5</LoS_Viper_Trooper>
+            <LoS_Viper_Elite>3.5</LoS_Viper_Elite>
+            <LoS_Viper_Assassin>3</LoS_Viper_Assassin>
+            <Mercenary_Slasher>1</Mercenary_Slasher>
+            <Mech_Scyther>1</Mech_Scyther>
+            <BS_GiantRobotRanged MayRequire="RedMattis.BigSmall.SimpleAndroids">0.5</BS_GiantRobotRanged>
+            <BS_GiantRobotMelee MayRequire="RedMattis.BigSmall.SimpleAndroids">0.5</BS_GiantRobotMelee>
+            <BS_Viper_MeleeDragoon MayRequire="Aoba.DeadManSwitch.MobileDragoon">0.5</BS_Viper_MeleeDragoon>
+            <BS_Viper_RangedDragoon MayRequire="Aoba.DeadManSwitch.MobileDragoon">0.5</BS_Viper_RangedDragoon>
           </options>
         </li>
 
@@ -122,6 +139,8 @@
             <Mech_Apocriton MayRequire="Ludeon.RimWorld.Biotech">1</Mech_Apocriton>
             <LoS_ViperBiomech>0.1</LoS_ViperBiomech>
             <LoS_ViperBiomechMelee>0.1</LoS_ViperBiomechMelee>
+            <BS_GiantRobotRanged MayRequire="RedMattis.BigSmall.SimpleAndroids">0.3</BS_GiantRobotRanged>
+            <BS_GiantRobotMelee MayRequire="RedMattis.BigSmall.SimpleAndroids">0.3</BS_GiantRobotMelee>
           </options>
         </li>
 
@@ -214,6 +233,8 @@
             <Mech_Scyther>2</Mech_Scyther>
             <BS_Viper_MeleeDragoon MayRequire="Aoba.DeadManSwitch.MobileDragoon">0.2</BS_Viper_MeleeDragoon>
             <BS_Viper_RangedDragoon MayRequire="Aoba.DeadManSwitch.MobileDragoon">0.2</BS_Viper_RangedDragoon>
+            <BS_GiantRobotRanged MayRequire="RedMattis.BigSmall.SimpleAndroids">0.3</BS_GiantRobotRanged>
+            <BS_GiantRobotMelee MayRequire="RedMattis.BigSmall.SimpleAndroids">0.3</BS_GiantRobotMelee>
           </options>
         </li>
         <li MayRequire="Ludeon.RimWorld.Ideology">
@@ -265,27 +286,4 @@
       </pawnGroupMakers>
     </value>
   </Operation>
-
-
-  <!-- <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Humanoid Alien Races</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/PawnKindDef[defName="LoS_ViperBiomech"]</xpath>
-          <value>
-            <race>BS_FacialAnimDisabledHuman</race>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/PawnKindDef[defName="LoS_ViperBiomechMelee"]</xpath>
-          <value>
-            <race>BS_FacialAnimDisabledHuman</race>
-          </value>
-        </li>
-      </operations>
-    </match>
-  </Operation> -->
 </Patch>
