@@ -1,0 +1,289 @@
+<Defs>
+
+  <PawnKindDef Name="LoS_ViperBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionType>LoS_ViperFamily</defaultFactionType>
+    <maxGenerationAge>55</maxGenerationAge>
+    <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+    <apparelColor>(34,30,34)</apparelColor>
+    <styleItemTags>
+      <li>
+        <tag>Soldier</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+    <!-- <apparelColor>0.32,0.20,0.32</apparelColor> -->
+    <chemicalAddictionChance>0.15</chemicalAddictionChance>
+    <combatEnhancingDrugsChance>0.25</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>0~3</combatEnhancingDrugsCount>
+    <invNutrition>2.55</invNutrition>
+    <itemQuality>Normal</itemQuality>
+    <weaponMoney>1100~2500</weaponMoney>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <apparelMoney>1250~2500</apparelMoney>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+    </apparelTags>
+    <apparelDisallowTags>
+      <li>Western</li>
+    </apparelDisallowTags>
+    <techHediffsChance>0.3</techHediffsChance>
+    <techHediffsMoney>1000~1500</techHediffsMoney>
+    <techHediffsRequired>
+      <li MayRequire="Ludeon.Rimworld.Royalty">DeathAcidifier</li>
+    </techHediffsRequired>
+    <biocodeWeaponChance>0.75</biocodeWeaponChance>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
+  </PawnKindDef>
+
+  
+  <!-- <pawnKindDef ParentName="LoS_ViperBase">
+    <defName>LoS_ViperWanderer</defName>
+    <label>viper</label>
+    <combatPower>65</combatPower>
+    <apparelColor>0.35,0.15,0.35</apparelColor>
+    <weaponTags>
+    </weaponTags>
+
+    <apparelRequired>
+      <li>Apparel_FlakVest</li>
+    </apparelRequired>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>15~24</initialResistanceRange>
+  </pawnKindDef> -->
+
+  <!--Grunts-->
+
+  <PawnKindDef Name="LoS_ViperGrunt" Abstract="True" ParentName="LoS_ViperBase">
+    <combatPower>65</combatPower>
+    <apparelMoney>5000~8000</apparelMoney>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <apparelRequired>
+      <li>Apparel_FlakJacket</li>
+      <li>Apparel_FlakVest</li>
+      <li>Apparel_FlakPants</li>
+    </apparelRequired>
+    <initialWillRange>2~4</initialWillRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="LoS_ViperGrunt">
+    <defName>LoS_Viper_Trooper</defName>
+    <label>viper shock trooper</label>
+    <apparelColor>(34,30,34)</apparelColor>
+    <techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>4~10</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <initialResistanceRange>15~24</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="LoS_ViperBase">
+    <defName>LoS_Viper_Grenadier</defName>
+    <label>viper demolist</label>
+    <apparelColor>0.35,0.15,0.35</apparelColor>
+    <canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>
+    <combatPower>100</combatPower>
+    <weaponTags>
+      <li>EmpireGrenadeDestructive</li>
+    </weaponTags>
+    <apparelMoney>6000~9000</apparelMoney>
+    <apparelRequired>
+      <li>Apparel_PowerArmorHelmet</li>
+      <li>Apparel_PowerArmor</li>
+    </apparelRequired>
+    <techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>4~10</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
+  </PawnKindDef>
+
+  <!-- Elite Soldiers-->
+
+  <PawnKindDef Name="ViperEliteGunner_Base" Abstract="True" ParentName="LoS_ViperBase">
+    <combatPower>100</combatPower>
+    <weaponMoney>1550~2700</weaponMoney>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+      <li>SpacerGun</li>
+      <li>SniperRifle</li>
+    </weaponTags>
+    <apparelMoney>6000~9000</apparelMoney>
+    <apparelRequired>
+      <li>Apparel_ArmorHelmetRecon</li>
+      <li>Apparel_ArmorRecon</li>
+    </apparelRequired>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef Name="LoS_Viper_Elite" ParentName="ViperEliteGunner_Base">
+    <defName>LoS_Viper_Elite</defName>
+    <label>Viper Elite</label>
+    <apparelColor>0.35,0.15,0.35</apparelColor>
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <alternateTagChoices>
+          <li>
+            <tag>Gunlink</tag>
+            <chance>0.2</chance>
+          </li>
+        </alternateTagChoices>
+      </li>
+    </specificApparelRequirements>
+    <techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~10</range>
+      </li>
+    </skills>
+    <initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="LoS_Viper_Elite">
+    <defName>LoS_Viper_TechElite</defName>
+    <label>Viper Elite</label>
+    <techHediffsMoney>1000~3800</techHediffsMoney>
+    <weaponTags Inherit="False">
+      <li>SpacerGun</li>
+    </weaponTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~20</range>
+      </li>
+    </skills>
+    <initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>13~21</initialResistanceRange>
+    <factionLeader>true</factionLeader>
+  </PawnKindDef>
+
+  <!-- Melee -->
+
+  <PawnKindDef ParentName="LoS_ViperBase">
+    <defName>LoS_Viper_Assassin</defName>
+    <label>assassin</label>
+    <maxGenerationAge>40</maxGenerationAge>
+    <combatPower>100</combatPower>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+      <li>UltratechMelee</li>
+    </weaponTags>
+    <apparelRequired>
+      <li>Apparel_ArmorRecon</li>
+      <li>Apparel_ShieldBelt</li>
+    </apparelRequired>
+    <apparelColor>0.35,0.15,0.35</apparelColor>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>8~20</range>
+      </li>
+    </skills>
+    <initialWillRange>3~5</initialWillRange>
+    <initialResistanceRange>12~20</initialResistanceRange>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <techHediffsMoney>1000~3800</techHediffsMoney>
+    <xenotypeSet>
+      <xenotypeChances>
+        <LoS_Lamia>0.60</LoS_Lamia>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.25</Hussar>
+        <!-- <Genie MayRequire="Ludeon.RimWorld.Biotech">0.03</Genie> -->
+        <VRE_Lowmate MayRequire="vanillaracesexpanded.highmate">0.20</VRE_Lowmate>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <!--Trader-->
+
+  <PawnKindDef ParentName="LoS_ViperBase">
+    <defName>LoS_Viper_Trader</defName>
+    <label>viper trader</label>
+    <race>Human</race>
+    <defaultFactionType>LoS_ViperFamily</defaultFactionType>
+    <maxGenerationAge>65</maxGenerationAge>
+    <trader>true</trader>
+    <isFighter>false</isFighter>
+    <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+    <chemicalAddictionChance>0.1</chemicalAddictionChance>
+    <combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+    <invNutrition>2.55</invNutrition>
+    <itemQuality>Normal</itemQuality>
+    <inventoryOptions>
+    <skipChance>0.70</skipChance>
+    <subOptionsTakeAll>
+      <li>
+        <thingDef>Silver</thingDef>
+        <countRange>30~100</countRange>
+      </li>
+    </subOptionsTakeAll>
+    </inventoryOptions>
+      <combatPower>40</combatPower>
+      <weaponTags>
+        <li>SimpleGun</li>
+      </weaponTags>
+      <weaponMoney>1100~3500</weaponMoney>
+      <apparelMoney>1250~2500</apparelMoney>
+      <apparelTags>
+        <li>IndustrialBasic</li>
+        <li>IndustrialAdvanced</li>
+        <li>IndustrialMilitaryBasic</li>
+        <li>IndustrialMilitaryAdvanced</li>
+      </apparelTags>
+      <apparelDisallowTags>
+        <li>Western</li>
+      </apparelDisallowTags>
+      <techHediffsChance>0.15</techHediffsChance>
+      <techHediffsMoney>1000~5800</techHediffsMoney>
+      <techHediffsTags>
+        <li>Advanced</li>
+        <li>ImplantEmpireCommon</li>
+      </techHediffsTags>
+      <initialWillRange>3~5</initialWillRange>
+      <initialResistanceRange>16~25</initialResistanceRange>
+      <xenotypeSet>
+        <xenotypeChances>
+          <Highmate MayRequire="Ludeon.RimWorld.Biotech">0.05</Highmate>
+        </xenotypeChances>
+      </xenotypeSet>
+    </PawnKindDef>
+
+    
+</Defs>
