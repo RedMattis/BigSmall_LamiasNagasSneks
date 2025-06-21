@@ -20,7 +20,7 @@
     <li>/</li>
     <li>1.6</li>
     <li IfModActive="Ludeon.Rimworld.Royalty">1.6/Royalty</li>
-    <li IfModActive="sarg.alphagenes">1.6/AlphaGenes</li>
+    <li IfModActive="sarg.alphagenes">1.6/Mods/AlphaGenes</li>
     <li IfModActive="Aoba.DeadManSwitch.MobileDragoon">1.6/Mods/MobileDragoon</li>
   </v1.6>
 
