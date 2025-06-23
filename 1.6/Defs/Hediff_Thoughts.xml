@@ -20,7 +20,7 @@
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<isBad>false</isBad>
 		<comps>
-			<li Class="AnimalBehaviours.HediffCompProperties_ThoughtEffecter">
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_ThoughtEffecter">
 				<radius>12</radius>
 				<tickInterval>500</tickInterval>
 				<thoughtDef>LoS_Voice</thoughtDef>

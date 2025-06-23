@@ -240,7 +240,7 @@
       <NegotiationAbility>0.25</NegotiationAbility>
     </statOffsets>
     <modExtensions>
-      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+      <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Genes.GeneExtension">
         <hediffToWholeBody>LoS_Voice</hediffToWholeBody>
       </li>
 		</modExtensions>

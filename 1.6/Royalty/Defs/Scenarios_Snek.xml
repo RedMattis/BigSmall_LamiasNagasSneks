@@ -103,7 +103,7 @@
             <li  MayRequire="sarg.alphagenes">AG_AbandonedBiotechLabAlpha</li>
           </chooseFrom>
         </li>
-        <li Class="VFECore.ScenPart_ForcedFactionGoodwill" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+        <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
           <factionDef>LoS_ViperFamily</factionDef>
           <affectStartingGoodwill>True</affectStartingGoodwill>
           <startingGoodwillRange>80~80</startingGoodwillRange>
@@ -111,7 +111,7 @@
           <naturalGoodwillRange>80~80</naturalGoodwillRange>
           <def>VFEC_ForcedFactionGoodwill</def>
         </li>
-        <li Class="VFECore.ScenPart_ForcedFactionGoodwill" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+        <li Class="VEF.Factions.ScenPart_ForcedFactionGoodwill" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
           <factionDef>Empire</factionDef>
           <affectStartingGoodwill>True</affectStartingGoodwill>
           <startingGoodwillRange>-80~-80</startingGoodwillRange>
