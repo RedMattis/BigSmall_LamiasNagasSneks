@@ -12,7 +12,7 @@
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
       <range>19.9</range> <!--Mostly relevant for AI use since the actual ability hits further than that.-->
-      <warmupTime>2</warmupTime>
+      <warmupTime>1.5</warmupTime>
       <soundCast>AcidSpray_Resolve</soundCast>
       <targetParams>
         <canTargetLocations>true</canTargetLocations>

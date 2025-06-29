@@ -51,8 +51,8 @@
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
-          <thingDef>BS_MealLargeSurvivalPack</thingDef>
-          <count>20</count>
+          <thingDef>MealSurvivalPack</thingDef>
+          <count>45</count>
         </li>
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>

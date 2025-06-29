@@ -7,7 +7,7 @@
     <label>Adderman</label>
     <description>Adderman look like snakes with a somewhat humanoid torso and arms, they are slightly smaller than humans, but have the ability to attack enemies with acid.\n\nWait, acid? Aren't Adders supossed to be venomous?</description>
     <inheritable>true</inheritable>
-    <combatPowerFactor>1</combatPowerFactor>
+    <combatPowerFactor>1.5</combatPowerFactor>
     <iconPath>Xenotypes/BS_Snek</iconPath>
     <factionlessGenerationWeight>0.5</factionlessGenerationWeight>
     <genes>
@@ -98,7 +98,7 @@
     <label>Pythonman</label>
     <description>Pythonman look like snakes with a somewhat humanoid torso and arms. Beware of their constriction attack.</description>
     <inheritable>true</inheritable>
-    <combatPowerFactor>1.0</combatPowerFactor>
+    <combatPowerFactor>1.5</combatPowerFactor>
     <iconPath>Xenotypes/BS_Snek</iconPath>
     <factionlessGenerationWeight>0.5</factionlessGenerationWeight>
     <genes>
