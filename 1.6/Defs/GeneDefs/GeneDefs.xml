@@ -22,7 +22,6 @@
       <SM_RaidWealthOffset>500</SM_RaidWealthOffset>
     </statOffsets>
     <selectionWeight>0</selectionWeight>
-    <marketValueFactor>1.4</marketValueFactor>
     <forcedTraits>
       <li>
         <def>BS_Giant</def>
@@ -55,7 +54,6 @@
       <SM_RaidWealthMultiplier>1.5</SM_RaidWealthMultiplier>
     </statFactors>
     <selectionWeight>0</selectionWeight>
-    <marketValueFactor>1.7</marketValueFactor>
     <forcedTraits>
       <li>
         <def>BS_Giant</def>
@@ -89,7 +87,6 @@
       <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.25</VEF_MassCarryCapacity>
     </statFactors>
     <selectionWeight>0</selectionWeight>
-    <marketValueFactor>1.4</marketValueFactor>
     <forcedTraits>
       <li>
         <def>BS_Giant</def>

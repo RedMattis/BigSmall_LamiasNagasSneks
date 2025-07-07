@@ -7,7 +7,6 @@
     <iconPath>Icons/BS_gorgon_AoE</iconPath>
     <prerequisite>BS_GorgonPetrifyCloseRange</prerequisite>
     <displayCategory>Ability</displayCategory>
-    <marketValueFactor>1.5</marketValueFactor>
     <abilities>
       <li>BS_GorgonPetrify</li>
     </abilities>
@@ -35,7 +34,6 @@
     <description>Carriers can temporarily petrify a target in melee.</description>
     <iconPath>Icons/BS_gorgon_SingleTarget</iconPath>
     <displayCategory>Ability</displayCategory>
-    <marketValueFactor>1</marketValueFactor>
     <statOffsets>
       <SM_RaidWealthOffset>500</SM_RaidWealthOffset>
     </statOffsets>
