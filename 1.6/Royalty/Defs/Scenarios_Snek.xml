@@ -1,5 +1,5 @@
 <Defs>
-  <ScenarioDef>
+  <ScenarioDef ParentName="ScenarioBase">
     <defName>LoS_ViperScenario</defName>
     <label>Viper Family Escort</label>
     <description>You were sent out to a secret research facility to act as escorts, entertainers and guards. When you get there it turns the research station has been in ruins for decades.</description>
@@ -9,18 +9,6 @@
         <def>PlayerFaction</def>
         <factionDef>LoS_ViperPlayerColony</factionDef>
       </playerFaction>
-      <surfaceLayer>
-        <def>SurfaceLayerFixed</def>
-        <tag>Surface</tag>
-        <layer>Surface</layer>
-        <settingsDef>Surface</settingsDef>
-        <hide>true</hide>
-        <connections>
-          <Orbit MayRequire="Ludeon.RimWorld.Odyssey">
-            <zoomMode>ZoomOut</zoomMode>
-          </Orbit>
-        </connections>
-      </surfaceLayer>
       <parts>
         <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
           <def>ConfigurePawnsXenotypes</def>
