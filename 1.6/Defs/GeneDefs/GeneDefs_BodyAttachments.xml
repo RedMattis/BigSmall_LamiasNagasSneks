@@ -26,8 +26,6 @@
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
         <bodyConstantHeadScale>true</bodyConstantHeadScale>
-        <!-- <preventHeadScalingFactor>1.0</preventHeadScalingFactor>
-        <preventHeadOffsetFactor>1.0</preventHeadOffsetFactor> -->
         <disableFacialAnimations>true</disableFacialAnimations>
         <headDrawData>
           <dataSouth>
