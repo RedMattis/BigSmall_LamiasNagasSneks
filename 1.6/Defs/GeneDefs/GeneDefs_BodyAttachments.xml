@@ -8,7 +8,7 @@
     
     <iconPath>Icons/LoS_SnekHead_icon</iconPath>
     <forcedHeadTypes> <li>LoS_SnekHead</li> </forcedHeadTypes>
-    <missingGeneRomanceChanceFactor>0.10</missingGeneRomanceChanceFactor>
+    <missingGeneRomanceChanceFactor>0.35</missingGeneRomanceChanceFactor>
     <statOffsets> <EatingSpeed>0.5</EatingSpeed> </statOffsets>
     <statFactors> <SM_HeadSize_Cosmetic>0.92</SM_HeadSize_Cosmetic> </statFactors>
     <biostatCpx>1</biostatCpx>
